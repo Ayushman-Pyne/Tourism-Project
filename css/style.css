@@ -155,14 +155,32 @@ body {
 /* Custom Map Marker */
 .custom-marker {
     background: linear-gradient(135deg, #fde047, #d4af37);
-    border: 2px solid #fff;
+    border: 0px solid #fff;
     border-radius: 50%;
-    cursor: pointer;
-    box-shadow: 0 0 10px rgba(212, 175, 55, 0.8), inset 0 0 4px rgba(0,0,0,0.3);
-    transition: background 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    cursor: auto;
+    width: 0.1px !important;
+    height: 0.1px !important;
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+    opacity: 0;
+    pointer-events: none;
 }
 
-.custom-marker:hover, .custom-marker.active-marker {
+.custom-marker.visible-marker {
+    width: 8px !important;
+    height: 8px !important;
+    margin-left: -4px !important;
+    margin-top: -4px !important;
+    border: 1px solid #fff;
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.8), inset 0 0 4px rgba(0,0,0,0.3);
+    opacity: 1;
+    pointer-events: auto;
+    cursor: pointer;
+    z-index: 900 !important;
+}
+
+.custom-marker.visible-marker:hover,
+.custom-marker.active-highlight {
     background: #fff;
     border-color: #d4af37;
     box-shadow: 0 0 20px rgba(255, 255, 255, 1);
@@ -180,17 +198,17 @@ path.leaflet-interactive {
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* Responsive */
+/* Responsive Layout Update */
 @media (max-width: 768px) {
-    #wrapper { flex-direction: column; }
     #sidebar { 
         width: 100%; 
         height: 45%; 
-        border-right: none;
+        top: auto;
+        bottom: 0;
+        border-left: none;
         border-top: 1px solid rgba(255, 255, 255, 0.1);
         padding: 20px;
     }
-    #map { height: 55%; }
 }
 
 /* Gold Tooltip applied to Leaflet Permanent Tooltips */
@@ -208,4 +226,84 @@ path.leaflet-interactive {
 }
 .leaflet-tooltip.gold-tooltip::before {
     display: none; /* Hide default tooltip arrow */
+}
+
+/* Sidebar Accordions */
+.state-header h1 {
+    color: #fde047;
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+}
+.state-intro {
+    font-size: 1.05rem;
+    color: #cbd5e1;
+    margin-bottom: 25px;
+    line-height: 1.7;
+}
+.section-title {
+    color: #e2e8f0;
+    font-size: 1.4rem;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+details.exhibit-item {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: background 0.3s;
+}
+details.exhibit-item:hover {
+    background: rgba(255, 255, 255, 0.06);
+}
+summary {
+    color: #d4af37;
+    font-size: 1.15rem;
+    font-weight: 600;
+    padding: 15px;
+    cursor: pointer;
+    list-style: none; /* Hide default arrow */
+    position: relative;
+    outline: none;
+}
+summary::-webkit-details-marker {
+    display: none;
+}
+summary::after {
+    content: '+';
+    position: absolute;
+    right: 15px;
+    color: #94a3b8;
+    font-size: 1.4rem;
+    transition: transform 0.3s;
+}
+details[open] summary::after {
+    content: '-';
+    transform: rotate(180deg);
+}
+details[open] .exhibit-content {
+    padding: 0 15px 15px 15px;
+}
+.fade-in {
+    animation: fadeIn 0.4s ease forwards;
+}
+
+/* Glassmorphism Leaflet Zoom Controls */
+.leaflet-bar {
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.3) !important;
+    border: none !important;
+}
+.leaflet-control-zoom a {
+    background: rgba(15, 17, 21, 0.6) !important;
+    color: #d4af37 !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.2) !important;
+    transition: all 0.3s !important;
+}
+.leaflet-control-zoom a:hover {
+    background: rgba(212, 175, 55, 0.2) !important;
+    color: #fff !important;
 }
