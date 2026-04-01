@@ -20,45 +20,40 @@ L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/dark_nolabels/{z}/{x}
     maxZoom: 20
 }).addTo(map);
 
-// Asynchronously Load Indian States GeoJSON from the fast, minified JSON local file
-function loadGeoJSON() {
-    fetch('datasets/local_states.json')
-        .then(res => res.json())
-        .then(data => {
-            geojsonData = data;
+// Load Indian States GeoJSON from the fast, minified local JS variable
+function initGeoJSON(data) {
+    geojsonData = data;
+    
+    geojsonLayer = L.geoJSON(data, {
+        style: {
+            color: '#d4af37',
+            weight: 1,
+            opacity: 0.1,
+            fillColor: '#d4af37',
+            fillOpacity: 0.0,
+            className: 'state-boundary'
+        },
+        onEachFeature: function(feature, layer) {
+            let rawName = feature.properties.NAME_1 || feature.properties.st_nm || feature.properties.ST_NM || feature.properties.state_name || "Unknown State";
+            const featureStateName = rawName.split(' ').map(w => w.charAt(0).toUpperCase() + w.slice(1).toLowerCase()).join(' ');
             
-            geojsonLayer = L.geoJSON(data, {
-                style: {
-                    color: '#d4af37',
-                    weight: 1,
-                    opacity: 0.1,
-                    fillColor: '#d4af37',
-                    fillOpacity: 0.0,
-                    className: 'state-boundary'
-                },
-                onEachFeature: function(feature, layer) {
-                    let rawName = feature.properties.NAME_1 || feature.properties.st_nm || feature.properties.ST_NM || feature.properties.state_name || "Unknown State";
-                    const featureStateName = rawName.split(' ').map(w => w.charAt(0).toUpperCase() + w.slice(1).toLowerCase()).join(' ');
-                    
-                    layer.on('click', function() {
-                        activateState(featureStateName);
-                    });
-                }
-            }).addTo(map);
-        })
-        .catch(err => {
-            console.warn("Could not load local_states.json dynamically:", err);
-            // Fallback to Web API if local file fails (e.g. testing locally over file://)
-            fetch('https://raw.githubusercontent.com/Subhash9325/GeoJson-Data-of-Indian-States/master/Indian_States')
-                .then(r => r.json())
-                .then(fallback => {
-                    geojsonLayer = L.geoJSON(fallback, { style: { color: '#d4af37', weight: 1, opacity: 0.1 } }).addTo(map);
-                });
-        });
+            layer.on('click', function() {
+                activateState(featureStateName);
+            });
+        }
+    }).addTo(map);
 }
 
-// Fetch geometry organically without blocking the visual web browser render thread!
-loadGeoJSON();
+// Fetch geometry organically from the pre-loaded DOM file to bypass local offline blocks
+if (typeof localGeoJSON !== 'undefined' && localGeoJSON.features) {
+    initGeoJSON(localGeoJSON);
+} else {
+    console.warn("Could not find local map data! Fallback to Web API...");
+    fetch('https://raw.githubusercontent.com/Subhash9325/GeoJson-Data-of-Indian-States/master/Indian_States')
+        .then(r => r.json())
+        .then(data => initGeoJSON(data))
+        .catch(err => console.error("Could not load backup API:", err));
+}
 
 // Offset Map Center Utility
 function flyToOffset(latlng, zoom, duration = 1.5) {
