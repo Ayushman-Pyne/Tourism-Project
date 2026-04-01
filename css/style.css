@@ -1,0 +1,211 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    background: #0f1115;
+    color: #e2e8f0;
+    line-height: 1.6;
+    overflow: hidden;
+}
+
+#wrapper {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* Map Section */
+#map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+/* Sidebar Styling (Glassmorphism) */
+#sidebar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 450px;
+    height: 100%;
+    padding: 40px;
+    background: rgba(15, 17, 21, 0.75); /* Highly transparent UI */
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-y: auto;
+    z-index: 2;
+    transition: all 0.4s ease-in-out;
+}
+
+/* Scrollbar for Sidebar */
+#sidebar::-webkit-scrollbar {
+    width: 6px;
+}
+#sidebar::-webkit-scrollbar-track {
+    background: transparent;
+}
+#sidebar::-webkit-scrollbar-thumb {
+    background: rgba(212, 175, 55, 0.5);
+    border-radius: 10px;
+}
+
+.museum-placeholder {
+    text-align: center;
+    color: #94a3b8;
+    font-style: italic;
+    opacity: 0.8;
+}
+
+/* Exhibit Content Styling */
+.exhibit-content {
+    animation: fadeIn 0.5s ease-out forwards;
+}
+
+.exhibit-content h1 {
+    color: #d4af37; /* Gold */
+    margin-bottom: 5px;
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.exhibit-content .location {
+    font-size: 0.95rem;
+    color: #94a3b8;
+    margin-bottom: 20px;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.exhibit-content img {
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin: 15px 0;
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s;
+}
+
+.exhibit-content img:hover {
+    transform: scale(1.02);
+}
+
+.exhibit-content p {
+    font-size: 1.05rem;
+    color: #cbd5e1;
+    margin-bottom: 20px;
+}
+
+.tag-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+.era-tag, .category-tag {
+    display: inline-block;
+    background: rgba(212, 175, 55, 0.1);
+    color: #d4af37;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    border: 1px solid rgba(212, 175, 55, 0.4);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.article-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #d4af37;
+    color: #0f1115;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: all 0.3s;
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+.article-link:hover {
+    background: #fde047;
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.5);
+    transform: translateY(-2px);
+}
+
+/* Custom Map Marker */
+.custom-marker {
+    background: linear-gradient(135deg, #fde047, #d4af37);
+    border: 2px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.8), inset 0 0 4px rgba(0,0,0,0.3);
+    transition: background 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-marker:hover, .custom-marker.active-marker {
+    background: #fff;
+    border-color: #d4af37;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 1);
+    z-index: 1000 !important;
+}
+
+/* GeoJSON Highlights */
+/* Defined in JS, but default leaflet path uses stroke/fill */
+path.leaflet-interactive {
+    transition: fill-opacity 0.3s, fill 0.3s, stroke-width 0.3s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #wrapper { flex-direction: column; }
+    #sidebar { 
+        width: 100%; 
+        height: 45%; 
+        border-right: none;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 20px;
+    }
+    #map { height: 55%; }
+}
+
+/* Gold Tooltip applied to Leaflet Permanent Tooltips */
+.leaflet-tooltip.gold-tooltip {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    color: #d4af37;
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    font-weight: 700;
+    font-size: 0.95rem;
+    text-shadow: 0px 2px 4px rgba(0,0,0,0.9), 0px 0px 8px rgba(0,0,0,0.8);
+    opacity: 1 !important;
+    white-space: nowrap;
+}
+.leaflet-tooltip.gold-tooltip::before {
+    display: none; /* Hide default tooltip arrow */
+}

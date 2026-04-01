@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>India Cultural Museum Map</title>
+    <meta name="description" content="Explore the deep cultural, linguistic, and historical dimensions of India through this interactive museum map.">
+    
+    <!-- Google Fonts for Modern Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons for UI -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Leaflet CSS for Map functionality -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    
+    <!-- Custom Application Styling -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="wrapper">
+    <!-- Map Container -->
+    <div id="map"></div>
+    
+    <!-- Glassmorphic Sidebar -->
+    <aside id="sidebar">
+        <div id="display-area">
+            <div class="museum-placeholder">
+                <i class="fas fa-map-marked-alt fa-3x" style="color: #d4af37; margin-bottom: 15px;"></i>
+                <h2>Explore the Heritage</h2>
+                <p>Hover over any golden marker to unveil the hidden history, vibrant culture, and ancient civilizations across India.</p>
+            </div>
+        </div>
+    </aside>
+</div>
+
+<!-- Leaflet JS Library -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+<!-- Heritage Data loaded as JS to avoid local CORS issues -->
+<script src="js/data.js"></script>
+
+<!-- Custom Map Logic -->
+<script src="js/app.js"></script>
+
+</body>
+</html>
