@@ -11,7 +11,7 @@ A stunning, interactive, and high-performance vanilla web application that showc
 
 ## Live Demo
 
-If you'd like to explore the interactive map right now, **[click here to visit the hosted site](#)**! 
+If you'd like to explore the interactive map right now, **[click here to visit the hosted site](https://ayushman-pyne.github.io/Tourism-Project/)**! 
 
 ## Project Structure
 
