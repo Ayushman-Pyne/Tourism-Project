@@ -372,3 +372,60 @@ details[open] .exhibit-content {
     text-shadow: 0 0 10px rgba(212, 175, 55, 0.4);
 }
 
+/* ── Custom Cursor ────────────────────────────────────────────────────────── */
+#cursor-dot, #cursor-outline {
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 10000;
+}
+
+#cursor-dot {
+    width: 6px;
+    height: 6px;
+    background-color: #d4af37;
+}
+
+#cursor-outline {
+    width: 30px;
+    height: 30px;
+    border: 1.5px solid rgba(212, 175, 55, 0.5);
+    transition: width 0.3s ease, height 0.3s ease, transform 0.15s ease-out, opacity 0.3s ease;
+}
+
+/* Cursor Hover State */
+body.cursor-hover #cursor-outline {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(212, 175, 55, 0.1);
+    border-color: rgba(212, 175, 55, 0.8);
+}
+
+body.cursor-hover #cursor-dot {
+    transform: translate(-50%, -50%) scale(0.5);
+    opacity: 0.5;
+}
+
+/* Hide on mobile/tablets */
+@media (max-width: 1024px) {
+    #cursor-dot, #cursor-outline {
+        display: none !important;
+    }
+    body {
+        cursor: auto !important;
+    }
+}
+
+/* Hide default cursor on desktop */
+@media (min-width: 1025px) {
+    body, a, button, .leaflet-interactive, .custom-marker, details summary,
+    .leaflet-container, .leaflet-grab, .leaflet-grabbing {
+        cursor: none !important;
+    }
+}
+

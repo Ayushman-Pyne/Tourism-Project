@@ -1,48 +1,70 @@
-# India Cultural Museum Map 🇮🇳
+# 🏛️ India Cultural Museum Map
+### *A Premium Interactive Exploration of India's Unseen Heritage*
 
-A stunning, interactive, and high-performance vanilla web application that showcases the deep, unseen cultural heritage of India. Built to provide a premium "museum-like" digital experience through modern web design (Dark Mode & Glassmorphism) and interactive mapping.
+[![Live Demo](https://img.shields.io/badge/Live-Demo-gold?style=for-the-badge&logo=google-chrome&logoColor=white)](https://ayushman-pyne.github.io/Tourism-Project/)
 
-## Features
+An interactive, high-performance web application designed to showcase the deep cultural, linguistic, and historical dimensions of India. This project transforms raw heritage data into a "Digital Museum" experience, utilizing modern web aesthetics, glassmorphism, and optimized data pipelines.
 
-- 🗺️ **Interactive Leaflet Map**: Uses a premium, dark-mode CartoDB map skin ensuring cultural markers pop clearly without visual clutter.
-- 🏛️ **Heritage Exhibits**: Hovering over golden markers reveals an elegantly designed, glassmorphic sidebar showcasing rich history, images, and context.
-- ✨ **Dynamic State Highlighting**: The application instantly boundaries and highlights individual Indian States dynamically when you explore monuments within that state (Powered by GeoJSON data).
-- ⚡ **Zero-Build Vanilla Architecture**: Built purely with HTML, CSS, and JS. No massive Node dependencies, no Webpack bundles—just lightning-fast loading entirely offline or on static site hosts.
+---
 
-## Live Demo
+## ✨ Key Features
 
-If you'd like to explore the interactive map right now, **[click here to visit the hosted site](https://ayushman-pyne.github.io/Tourism-Project/)**! 
+### 🏛️ Museum-Quality UX
+- **Dark Museum Aesthetic**: A curated high-contrast palette using deep charcoals and Royal Gold (`#d4af37`).
+- **Premium Typography**: Pairings of *Cinzel* (Headings) and *Cormorant Garamond* (Body) for a classic, sophisticated feel.
+- **Custom Interactive Cursor**: A sleek, golden follower cursor that reacts to interactive elements and labels.
+- **Glassmorphic Sidebar**: Elegant, translucent overlays that showcase heritage exhibits with smooth animations.
 
-## Project Structure
+### 🗺️ Intelligent Mapping
+- **State-Centric Navigation**: Clicking any of the 36 States/UTs triggers a focus-zoom, highlights boundaries, and reveals specific heritage markers.
+- **Smart Labels**: Custom state labels that remain interactive and scale based on zoom level.
+- **Fixed-Anchor Zoom**: Zooming via buttons always centers on India's geographic heart, maintaining context during exploration.
+- **Reset to Overview**: Quickly return to the full map of India via the `Esc` key or by clicking anywhere on the empty map background.
+
+### 🚀 Performance & Optimization
+- **Bundled Asset Pipeline**: Merges over 200+ heritage items from 36 separate datasets into a single, lightning-fast `data.js` bundle (reducing startup Latency).
+- **Lazy-Loaded Exhibits**: Images are fetched with `loading="lazy"` and `decoding="async"`, ensuring the initial page load stays under 1MB even with 200+ high-res photos.
+- **Minified Map Data**: The primary GeoJSON map is minified to ensure the browser processes complex state boundaries instantly.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Core**: Vanilla JavaScript (ES6+), HTML5, CSS3.
+- **Mapping**: [Leaflet.js](https://leafletjs.com/) with [CartoDB Dark](https://carto.com/basemaps/) tile layers.
+- **Icons & Fonts**: FontAwesome 6, Google Fonts.
+- **Deployment**: Architecture-ready for GitHub Pages or any static CDN.
+
+---
+
+## 📁 Project Structure
 
 ```text
 Tourism-Project/
-├── index.html            # Main Entry Point with full Semantic HTML
+├── index.html            # Core application entry point
 ├── css/
-│   └── style.css         # Animations, Layouts, and Premium User Interface
+│   └── style.css         # Design system (Animations, Glassmorphism, Cursor)
 ├── js/
-│   ├── app.js            # Core Leaflet Initialization and Event Handlers
-│   └── data.js           # Structured Heritage Dataset (replaces JSON for CORS)
-├── datasets/
-│   └── heritage_data.json# Raw JSON replica of the Data for API potential
-└── archive/
-    └── version_1.html    # Original prototype architecture
+│   ├── app.js            # Main application logic & event systems
+│   ├── data.js           # Production-ready bundled heritage dataset (36 states/UTs)
+│   └── final_labelled_map.json # Minified GeoJSON Map with state boundaries
+├── datasets/             # Source data for future updates
+│   └── data/*.json       # Individual state source files (219+ heritage points)
+└── images/               # Local asset library (Optimized heritage photos)
 ```
 
+---
 
-## Current Dataset Focus: Kerala
+## 🚀 Local Development
 
-The initial dataset was constructed based on deep-dive ethnographic and academic findings from **Kerala**. The exhibits currently encompass:
+1. **Clone the Repo**:
+   ```bash
+   git clone https://github.com/ayushman-pyne/Tourism-Project.git
+   ```
+2. **Launch**: Open `index.html` via a local server (e.g., VS Code Live Server).
 
-- **The Moosharis of Kunhimangalam**: A 900-year legacy of bell-metal casting.
-- **The Cholanaikkans**: India's isolated hunter-gatherer tribe hiding inside the Nilambur forest.
-- **Vadakke Madham Manuscripts**: 748 palm-leaf manuscripts preserved in Thrissur.
-- **Kan.akkatikaram Treatises**: Medieval vernacular mathematics from Thiruvananthapuram.
-- **Mavilan Tulu Language**: A distinct linguistic preservation effort happening in North Kerala.
-- **Arabi-Malayalam Script**: A marginalized Malayalam scriptorial variant using Arabic structures.
+---
 
-## Roadmap
-
-- Expansion into the rich Temple architectures of **Tamil Nadu**.
-- Integration of the distinct Forts in **Rajasthan**.
-- Interactive map-filtering capabilities (e.g., Filtering by Era or Category directly on the canvas).
+## ⚖️ Credits
+Built with ❤️ for Indian Culture by **Arceus © 2026**
+*Explore the project at [ayushman-pyne.github.io](https://ayushman-pyne.github.io/portfolio.github.io/)*

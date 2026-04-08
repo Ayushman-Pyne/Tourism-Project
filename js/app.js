@@ -72,7 +72,8 @@ function initGeoJSON(data) {
                 offset: tooltipOffset
             });
             
-            layer.on('click', function() {
+            layer.on('click', function(e) {
+                L.DomEvent.stopPropagation(e); // Prevent background map click reset
                 activateState(featureStateName);
             });
         }
@@ -80,7 +81,7 @@ function initGeoJSON(data) {
 }
 
 // Fetch geometry from the newly organized local datasets folder
-fetch('datasets/map/final_labelled_map.json')
+fetch('js/final_labelled_map.json')
     .then(r => {
         if (!r.ok) throw new Error("Local map file missing or not returned successfully");
         return r.json();
@@ -480,3 +481,60 @@ document.addEventListener('keydown', (e) => {
         resetToIndia();
     }
 });
+
+// ── Map Background Click → Reset to India ─────────────────────────────────────
+map.on('click', function(e) {
+    // This will only fire if the click wasn't on a state or marker
+    // because we call stopPropagation on those interaction events.
+    resetToIndia();
+});
+
+// ── Custom Cursor Logic ───────────────────────────────────────────────────────
+(function() {
+    const dot = document.getElementById('cursor-dot');
+    const outline = document.getElementById('cursor-outline');
+    
+    if (!dot || !outline) return;
+
+    window.addEventListener('mousemove', (e) => {
+        const posX = e.clientX;
+        const posY = e.clientY;
+
+        // Immediate position for dot
+        dot.style.left = `${posX}px`;
+        dot.style.top = `${posY}px`;
+        dot.style.opacity = '1';
+
+        // Outline follows with a slight CSS transition (defined in style.css)
+        outline.style.left = `${posX}px`;
+        outline.style.top = `${posY}px`;
+        outline.style.opacity = '1';
+    });
+
+    // Hide cursor when leaving window
+    document.addEventListener('mouseleave', () => {
+        dot.style.opacity = '0';
+        outline.style.opacity = '0';
+    });
+
+    // Hover effect for interactive elements
+    const handleHover = (isHovering) => {
+        document.body.classList.toggle('cursor-hover', isHovering);
+    };
+
+    // Use event delegation for hover states
+    document.addEventListener('mouseover', (e) => {
+        const target = e.target;
+        const isInteractive = 
+            target.closest('a') || 
+            target.closest('button') || 
+            target.closest('.state-label') || 
+            target.closest('.leaflet-tooltip') ||
+            target.closest('.custom-marker') || 
+            target.closest('summary') ||
+            target.closest('.details-title');
+            
+        handleHover(!!isInteractive);
+    });
+})();
+
