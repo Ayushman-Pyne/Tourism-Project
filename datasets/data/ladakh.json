@@ -1,0 +1,114 @@
+{
+    "states": {
+        "Ladakh": {
+            "heading": "The High-Altitude Heritage of Ladakh",
+            "introduction": "Ladakh is a starkly beautiful Himalayan region known for its dramatic landscapes, ancient monasteries, and deep-rooted Tibetan-Buddhist traditions. With its high-altitude deserts, vibrant festivals, and spiritual calm, it offers a truly unique cultural and natural experience.",
+            "coords": [
+                34.1526,
+                77.5770
+            ],
+            "zoom": 7,
+            "sections": [
+                {
+                    "sectionTitle": "Monastic and Spiritual Heritage",
+                    "items": [
+                        {
+                            "id": "hemis",
+                            "title": "Hemis Monastery",
+                            "city": "Leh",
+                            "coords": [
+                                33.9626,
+                                77.7952
+                            ],
+                            "era": "17th Century",
+                            "category": "Religious Heritage",
+                            "image": "https://images.unsplash.com/photo-1589883661923-6476cb0ae9f2?auto=format&fit=crop&w=400&q=80",
+                            "description": "Hemis Monastery is the largest and most prominent monastery in Ladakh, belonging to the Drukpa lineage of Tibetan Buddhism. It is famous for its annual Hemis festival. The monastery is a key center of spiritual and cultural life.",
+                            "articleLink": "https://www.google.com/search?q=Hemis+Monastery+Ladakh"
+                        },
+                        {
+                            "id": "thiksey",
+                            "title": "Thiksey Monastery",
+                            "city": "Leh",
+                            "coords": [
+                                34.0500,
+                                77.6700
+                            ],
+                            "era": "15th Century",
+                            "category": "Architecture",
+                            "image": "https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=400&q=80",
+                            "description": "Thiksey Monastery is a hilltop complex resembling Tibet’s Potala Palace. It houses a large statue of Maitreya Buddha and offers panoramic views of the Indus Valley. The monastery reflects Ladakh’s deep spiritual traditions.",
+                            "articleLink": "https://www.google.com/search?q=Thiksey+Monastery+Ladakh"
+                        }
+                    ]
+                },
+                {
+                    "sectionTitle": "Nature and Cultural Landscapes",
+                    "items": [
+                        {
+                            "id": "pangong",
+                            "title": "Pangong Lake",
+                            "city": "Pangong",
+                            "coords": [
+                                33.9333,
+                                78.7000
+                            ],
+                            "era": "Natural Heritage",
+                            "category": "Nature",
+                            "image": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=400&q=80",
+                            "description": "Pangong Lake is a high-altitude lake famous for its changing shades of blue and scenic beauty. Surrounded by mountains, it is a major tourist attraction. The lake represents Ladakh’s raw and untouched natural landscape.",
+                            "articleLink": "https://www.google.com/search?q=Pangong+Lake+Ladakh"
+                        },
+                        {
+                            "id": "nubra",
+                            "title": "Nubra Valley",
+                            "city": "Nubra",
+                            "coords": [
+                                34.6000,
+                                77.5500
+                            ],
+                            "era": "Historic Trade Route",
+                            "category": "Nature & Culture",
+                            "image": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=400&q=80",
+                            "description": "Nubra Valley is known for its sand dunes, double-humped camels, and scenic landscapes. It was once part of the ancient Silk Route connecting India with Central Asia. The valley blends history, culture, and natural beauty.",
+                            "articleLink": "https://www.google.com/search?q=Nubra+Valley+Ladakh"
+                        }
+                    ]
+                },
+                {
+                    "sectionTitle": "Cuisine and Language",
+                    "items": [
+                        {
+                            "id": "ladakhfood",
+                            "title": "Ladakhi Cuisine",
+                            "city": "Leh",
+                            "coords": [
+                                34.1526,
+                                77.5770
+                            ],
+                            "era": "Himalayan Culinary Tradition",
+                            "category": "Cuisine",
+                            "image": "https://images.unsplash.com/photo-1601050690117-94f5f6fa5b5e?auto=format&fit=crop&w=400&q=80",
+                            "description": "Ladakhi cuisine includes hearty dishes like thukpa, momos, and butter tea, suited for cold climates. Ingredients are simple and locally sourced. The food reflects survival and comfort in high-altitude conditions.",
+                            "articleLink": "https://www.google.com/search?q=Ladakhi+cuisine+thukpa"
+                        },
+                        {
+                            "id": "ladakhi",
+                            "title": "Ladakhi Language",
+                            "city": "Leh",
+                            "coords": [
+                                34.1526,
+                                77.5770
+                            ],
+                            "era": "Tibetan Linguistic Tradition",
+                            "category": "Linguistics",
+                            "image": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=400&q=80",
+                            "description": "Ladakhi is a Tibetic language closely related to Tibetan, widely spoken in the region. It has a strong oral and religious tradition. The language plays a vital role in preserving Ladakh’s cultural identity.",
+                            "articleLink": "https://www.google.com/search?q=Ladakhi+language+history"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

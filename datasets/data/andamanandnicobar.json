@@ -1,0 +1,114 @@
+{
+    "states": {
+        "Andaman and Nicobar Islands": {
+            "heading": "The Island Heritage of Andaman and Nicobar",
+            "introduction": "The Andaman and Nicobar Islands are a tropical paradise where turquoise waters meet rich tribal heritage and colonial history. From pristine beaches and coral reefs to indigenous cultures and freedom struggle landmarks, the islands offer a unique blend of nature and history.",
+            "coords": [
+                11.7401,
+                92.6586
+            ],
+            "zoom": 7,
+            "sections": [
+                {
+                    "sectionTitle": "History and Heritage",
+                    "items": [
+                        {
+                            "id": "cellular",
+                            "title": "Cellular Jail",
+                            "city": "Port Blair",
+                            "coords": [
+                                11.6755,
+                                92.7451
+                            ],
+                            "era": "Colonial Era",
+                            "category": "History",
+                            "image": "https://images.unsplash.com/photo-1582550945154-66ea8fff25e1?auto=format&fit=crop&w=400&q=80",
+                            "description": "Cellular Jail, also known as ‘Kala Pani’, is a historic prison used by the British to exile Indian freedom fighters. Today it stands as a national memorial. It symbolizes sacrifice and the struggle for independence.",
+                            "articleLink": "https://www.google.com/search?q=Cellular+Jail+Andaman"
+                        },
+                        {
+                            "id": "ross",
+                            "title": "Ross Island (Netaji Subhash Chandra Bose Island)",
+                            "city": "Port Blair",
+                            "coords": [
+                                11.6750,
+                                92.7500
+                            ],
+                            "era": "Colonial Era",
+                            "category": "History",
+                            "image": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=400&q=80",
+                            "description": "Ross Island was once the administrative headquarters of the British in the Andamans. Today, its ruins are surrounded by lush greenery and wildlife. It offers a glimpse into colonial life and history.",
+                            "articleLink": "https://www.google.com/search?q=Ross+Island+Andaman"
+                        }
+                    ]
+                },
+                {
+                    "sectionTitle": "Nature and Indigenous Culture",
+                    "items": [
+                        {
+                            "id": "radhanagar",
+                            "title": "Radhanagar Beach",
+                            "city": "Havelock Island",
+                            "coords": [
+                                11.9846,
+                                92.9565
+                            ],
+                            "era": "Natural Heritage",
+                            "category": "Nature",
+                            "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=400&q=80",
+                            "description": "Radhanagar Beach is one of Asia’s most beautiful beaches, known for its white sand and crystal-clear waters. It offers breathtaking sunsets and a peaceful atmosphere. The beach highlights the islands’ natural beauty.",
+                            "articleLink": "https://www.google.com/search?q=Radhanagar+Beach+Andaman"
+                        },
+                        {
+                            "id": "tribes",
+                            "title": "Indigenous Tribes of Andaman",
+                            "city": "North Andaman",
+                            "coords": [
+                                12.6112,
+                                92.8317
+                            ],
+                            "era": "Ancient Indigenous Culture",
+                            "category": "Tribal Culture",
+                            "image": "https://images.unsplash.com/photo-1549880338-65ddcdfd017b?auto=format&fit=crop&w=400&q=80",
+                            "description": "The Andaman Islands are home to some of the world’s oldest indigenous tribes, such as the Jarwa and Sentinelese. These communities maintain unique lifestyles and traditions. Their cultures are protected and largely isolated from modern society.",
+                            "articleLink": "https://www.google.com/search?q=Andaman+indigenous+tribes+Jarwa+Sentinelese"
+                        }
+                    ]
+                },
+                {
+                    "sectionTitle": "Cuisine and Language",
+                    "items": [
+                        {
+                            "id": "islandcuisine",
+                            "title": "Island Cuisine",
+                            "city": "Port Blair",
+                            "coords": [
+                                11.6755,
+                                92.7451
+                            ],
+                            "era": "Coastal Culinary Tradition",
+                            "category": "Cuisine",
+                            "image": "https://images.unsplash.com/photo-1601050690117-94f5f6fa5b5e?auto=format&fit=crop&w=400&q=80",
+                            "description": "Cuisine in the Andaman and Nicobar Islands is dominated by seafood, coconut, and tropical flavors. Influences from Indian and Southeast Asian cooking are evident. The food reflects the island lifestyle and coastal resources.",
+                            "articleLink": "https://www.google.com/search?q=Andaman+Nicobar+cuisine+seafood"
+                        },
+                        {
+                            "id": "languages",
+                            "title": "Hindi, Bengali, and Tribal Languages",
+                            "city": "Port Blair",
+                            "coords": [
+                                11.6755,
+                                92.7451
+                            ],
+                            "era": "Modern Linguistic Mix",
+                            "category": "Linguistics",
+                            "image": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=400&q=80",
+                            "description": "Hindi and Bengali are widely spoken in the islands along with various indigenous tribal languages. This linguistic diversity reflects migration and native heritage. It contributes to the islands’ multicultural identity.",
+                            "articleLink": "https://www.google.com/search?q=Languages+in+Andaman+Nicobar"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

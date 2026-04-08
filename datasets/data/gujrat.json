@@ -1,0 +1,114 @@
+{
+    "states": {
+        "Gujarat": {
+            "heading": "The Vibrant Legacy of Gujarat",
+            "introduction": "Gujarat is a land of dynamic traditions, entrepreneurial spirit, and rich heritage shaped by centuries of trade and culture. From colorful festivals and intricate crafts to historic sites and diverse cuisine, the state offers a vivid tapestry of India’s western identity.",
+            "coords": [
+                22.2587,
+                71.1924
+            ],
+            "zoom": 6,
+            "sections": [
+                {
+                    "sectionTitle": "Festivals and Cultural Expressions",
+                    "items": [
+                        {
+                            "id": "navratri",
+                            "title": "Navratri Festival",
+                            "city": "Ahmedabad",
+                            "coords": [
+                                23.0225,
+                                72.5714
+                            ],
+                            "era": "Ancient Tradition",
+                            "category": "Festivals",
+                            "image": "https://images.unsplash.com/photo-1605731414532-6b26976cc153?auto=format&fit=crop&w=400&q=80",
+                            "description": "Navratri in Gujarat is one of the longest dance festivals in the world, celebrated with Garba and Dandiya Raas. For nine nights, communities gather in vibrant attire to dance and worship the goddess Durga. It reflects the state’s energetic and communal spirit.",
+                            "articleLink": "https://www.google.com/search?q=Navratri+Gujarat+Garba"
+                        },
+                        {
+                            "id": "kutchcraft",
+                            "title": "Kutch Handicrafts",
+                            "city": "Bhuj",
+                            "coords": [
+                                23.2420,
+                                69.6669
+                            ],
+                            "era": "Traditional Craft Heritage",
+                            "category": "Craftsmanship",
+                            "image": "https://images.unsplash.com/photo-1598515213695-1a5a2c7f7a68?auto=format&fit=crop&w=400&q=80",
+                            "description": "The Kutch region is famous for its intricate handicrafts, including embroidery, mirror work, and textiles. Created by local artisan communities, each piece tells a story of tradition and identity. These crafts are globally admired for their vibrant colors and detail.",
+                            "articleLink": "https://www.google.com/search?q=Kutch+handicrafts+Gujarat"
+                        }
+                    ]
+                },
+                {
+                    "sectionTitle": "Historical and Architectural Heritage",
+                    "items": [
+                        {
+                            "id": "somnath",
+                            "title": "Somnath Temple",
+                            "city": "Somnath",
+                            "coords": [
+                                20.8880,
+                                70.4012
+                            ],
+                            "era": "Ancient to Modern",
+                            "category": "Religious Heritage",
+                            "image": "https://images.unsplash.com/photo-1627894483216-2138af692e32?auto=format&fit=crop&w=400&q=80",
+                            "description": "The Somnath Temple is one of the twelve Jyotirlingas of Lord Shiva and holds immense religious significance. Rebuilt several times after invasions, it stands as a symbol of resilience and faith. Its coastal location adds to its spiritual grandeur.",
+                            "articleLink": "https://www.google.com/search?q=Somnath+Temple+history"
+                        },
+                        {
+                            "id": "rani",
+                            "title": "Rani ki Vav",
+                            "city": "Patan",
+                            "coords": [
+                                23.8588,
+                                72.1010
+                            ],
+                            "era": "11th Century",
+                            "category": "Architecture",
+                            "image": "https://images.unsplash.com/photo-1609948543911-cb5c2f4bcb64?auto=format&fit=crop&w=400&q=80",
+                            "description": "Rani ki Vav is a UNESCO World Heritage stepwell renowned for its intricate carvings and architectural brilliance. Built in memory of a king, it reflects the sophistication of ancient water management systems. Its detailed sculptures make it a masterpiece of Indian heritage.",
+                            "articleLink": "https://www.google.com/search?q=Rani+ki+Vav+Patan"
+                        }
+                    ]
+                },
+                {
+                    "sectionTitle": "Cuisine and Linguistic Identity",
+                    "items": [
+                        {
+                            "id": "gujaraticuisine",
+                            "title": "Gujarati Cuisine",
+                            "city": "Surat",
+                            "coords": [
+                                21.1702,
+                                72.8311
+                            ],
+                            "era": "Traditional Culinary Heritage",
+                            "category": "Cuisine",
+                            "image": "https://images.unsplash.com/photo-1601050690117-94f5f6fa5b5e?auto=format&fit=crop&w=400&q=80",
+                            "description": "Gujarati cuisine is known for its unique blend of sweet, salty, and spicy flavors. Dishes like dhokla, thepla, and undhiyu reflect regional diversity and vegetarian traditions. The cuisine emphasizes balance and is deeply tied to cultural practices.",
+                            "articleLink": "https://www.google.com/search?q=Gujarati+cuisine+dhokla+undhiyu"
+                        },
+                        {
+                            "id": "gujarati",
+                            "title": "Gujarati Language",
+                            "city": "Gandhinagar",
+                            "coords": [
+                                23.2156,
+                                72.6369
+                            ],
+                            "era": "Medieval Origins",
+                            "category": "Linguistics",
+                            "image": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=400&q=80",
+                            "description": "Gujarati is the official language of the state and has a rich literary tradition dating back centuries. It evolved from Sanskrit and Prakrit influences and is widely spoken across the region. Its script and literature reflect Gujarat’s historical depth and cultural richness.",
+                            "articleLink": "https://www.google.com/search?q=Gujarati+language+history"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

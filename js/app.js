@@ -4,11 +4,23 @@ let geojsonData = null;
 let allMarkers = [];
 let idleTimer;
 let isReading = false; // Prevents map from resetting while actively reading an exhibit
+let statesData = null; // Holds the parsed heritage dataset
 
 // Map Initialization
 map = L.map('map', {
     zoomControl: false // We will add it manually to style it
 }).setView([21.0, 78.0], 5);
+
+// Immediately apply offset for the sidebar so it starts in the correct centered view
+(function() {
+    const targetPoint = map.project([21.0, 78.0], 5);
+    if (window.innerWidth > 768) {
+        targetPoint.x += 225; // Shift center right by 225px to account for sidebar
+    } else {
+        targetPoint.y += (window.innerHeight * 0.45) / 2; // Shift center down for mobile
+    }
+    map.setView(map.unproject(targetPoint, 5), 5);
+})();
 
 // Add zoom control to top-left
 L.control.zoom({ position: 'topleft' }).addTo(map);
@@ -27,8 +39,8 @@ function initGeoJSON(data) {
     geojsonLayer = L.geoJSON(data, {
         style: {
             color: '#d4af37',
-            weight: 1,
-            opacity: 0.1,
+            weight: 1.5,
+            opacity: 0.15,
             fillColor: '#d4af37',
             fillOpacity: 0.0,
             className: 'state-boundary'
@@ -37,6 +49,14 @@ function initGeoJSON(data) {
             let rawName = feature.properties.NAME_1 || feature.properties.st_nm || feature.properties.ST_NM || feature.properties.state_name || "Unknown State";
             const featureStateName = rawName.split(' ').map(w => w.charAt(0).toUpperCase() + w.slice(1).toLowerCase()).join(' ');
             
+            // Add permanent subtle label to the map geographic center of this state
+            layer.bindTooltip(featureStateName, {
+                permanent: true,
+                direction: "center",
+                className: "state-label",
+                interactive: true
+            });
+            
             layer.on('click', function() {
                 activateState(featureStateName);
             });
@@ -44,16 +64,20 @@ function initGeoJSON(data) {
     }).addTo(map);
 }
 
-// Fetch geometry organically from the pre-loaded DOM file to bypass local offline blocks
-if (typeof localGeoJSON !== 'undefined' && localGeoJSON.features) {
-    initGeoJSON(localGeoJSON);
-} else {
-    console.warn("Could not find local map data! Fallback to Web API...");
-    fetch('https://raw.githubusercontent.com/Subhash9325/GeoJson-Data-of-Indian-States/master/Indian_States')
-        .then(r => r.json())
-        .then(data => initGeoJSON(data))
-        .catch(err => console.error("Could not load backup API:", err));
-}
+// Fetch geometry from the newly organized local datasets folder
+fetch('datasets/map/final_labelled_map.json')
+    .then(r => {
+        if (!r.ok) throw new Error("Local map file missing or not returned successfully");
+        return r.json();
+    })
+    .then(data => initGeoJSON(data))
+    .catch(err => {
+        console.warn("Could not find local map data! Fallback to Web API...", err);
+        fetch('https://raw.githubusercontent.com/Subhash9325/GeoJson-Data-of-Indian-States/master/Indian_States')
+            .then(r => r.json())
+            .then(data => initGeoJSON(data))
+            .catch(apiErr => console.error("Could not load backup API:", apiErr));
+    });
 
 // Offset Map Center Utility
 function flyToOffset(latlng, zoom, duration = 1.5) {
@@ -73,8 +97,8 @@ function flyToOffset(latlng, zoom, duration = 1.5) {
 
 // Initialization Function for Markers
 function loadMarkers() {
-    if (typeof statesData === 'undefined') {
-        console.error("Heritage data is missing. Make sure data.js is loaded.");
+    if (!statesData || Object.keys(statesData).length === 0) {
+        console.error("Heritage data is missing or empty.");
         return;
     }
 
@@ -141,7 +165,7 @@ function activateState(stateName) {
                 layer.setStyle({ fillColor: '#d4af37', fillOpacity: 0.25, weight: 2, opacity: 0.8 });
                 layer.bringToBack();
             } else {
-                layer.setStyle({ weight: 1, opacity: 0.1, fillColor: '#d4af37', fillOpacity: 0.0 });
+                layer.setStyle({ weight: 1.5, opacity: 0.15, fillColor: '#d4af37', fillOpacity: 0.0 });
             }
         });
     }
@@ -212,7 +236,7 @@ function renderSidebar(stateName, stateData) {
 
     displayArea.innerHTML = `
         <div class="state-header fade-in">
-            <h1>${stateName}</h1>
+            <h1>${stateData.heading}</h1>
             <p class="state-intro">${stateData.introduction}</p>
         </div>
         <div class="accordion-container">
@@ -251,6 +275,12 @@ function renderSidebar(stateName, stateData) {
                             marker.closeTooltip();
                             L.DomUtil.removeClass(marker._icon, 'active-highlight');
                         }
+                        
+                        // If no other sections are open, smoothly fly back to the broader state view
+                        if (!anyOpen) {
+                            flyToOffset(stateData.coords, stateData.zoom || 6, 1.5);
+                        }
+                        
                         resetTimer(); // Restart the timer
                     }
                 });
@@ -307,6 +337,67 @@ map.on('mousemove', resetTimer);
 map.on('dragstart', resetTimer);
 map.on('zoomstart', resetTimer);
 
-// Initialize system
-loadMarkers();
-resetTimer();
+const dataFiles = [
+    'datasets/data/andhrapradesh.json',
+    'datasets/data/assam.json',
+    'datasets/data/bihar.json',
+    'datasets/data/goa.json',
+    'datasets/data/gujrat.json',
+    'datasets/data/haryana.json',
+    'datasets/data/himachalpradesh.json',
+    'datasets/data/jharkhand.json',
+    'datasets/data/karnatka.json',
+    'datasets/data/kerala.json',
+    'datasets/data/madhyapradesh.json',
+    'datasets/data/maharashtra.json',
+    'datasets/data/manipur.json',
+    'datasets/data/meghalaya.json',
+    'datasets/data/mizoram.json',
+    'datasets/data/nagaland.json',
+    'datasets/data/odisha.json',
+    'datasets/data/punjab.json',
+    'datasets/data/rajasthan.json',
+    'datasets/data/sikkim.json',
+    'datasets/data/tamilnadu.json',
+    'datasets/data/telangana.json',
+    'datasets/data/tripura.json',
+    'datasets/data/up.json',
+    'datasets/data/uttarakhand.json',
+    'datasets/data/westbengal.json',
+    'datasets/data/arunachalpradesh.json',
+    'datasets/data/chattisgarh.json',
+    'datasets/data/andamanandnicobar.json',
+    'datasets/data/chandigarh.json',
+    'datasets/data/dadraandnagarhaveli.json',
+    'datasets/data/delhi.json',
+    'datasets/data/jammuandkashmir.json',
+    'datasets/data/ladakh.json',
+    'datasets/data/lakshadweep.json',
+    'datasets/data/puducherry.json'
+];
+
+Promise.all(dataFiles.map(file => {
+    return fetch(file).then(response => {
+        if (!response.ok) throw new Error("Network response was not ok for " + file);
+        return response.json();
+    });
+}))
+.then(results => {
+    statesData = {};
+    results.forEach(data => {
+        const states = data.states || data;
+        Object.assign(statesData, states); // Merge each state's data into the global dictionary
+    });
+    loadMarkers();
+    resetTimer();
+})
+.catch(err => {
+    console.error("Failed to load JSON datasets. Are you running a local server?", err);
+    displayArea.innerHTML = `
+        <div class="museum-placeholder fade-in" style="margin: auto 0; text-align: center;">
+            <i class="fas fa-exclamation-triangle fa-3x" style="color: #ef4444; margin-bottom: 15px;"></i>
+            <h2 style="color: #fca5a5;">Data Unavailable</h2>
+            <p>Could not load state datasets. Since browsers block local file loading, please ensure this site is running on a local development server (like VS Code Live Server).</p>
+        </div>
+    `;
+});

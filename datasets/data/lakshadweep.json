@@ -1,0 +1,114 @@
+{
+    "states": {
+        "Lakshadweep": {
+            "heading": "The Coral Paradise of Lakshadweep",
+            "introduction": "Lakshadweep is a pristine archipelago of coral islands known for its turquoise lagoons, white sandy beaches, and rich marine life. With a culture influenced by coastal traditions and Islamic heritage, it offers a serene and unique island experience far from the mainland bustle.",
+            "coords": [
+                10.5667,
+                72.6417
+            ],
+            "zoom": 7,
+            "sections": [
+                {
+                    "sectionTitle": "Nature and Marine Heritage",
+                    "items": [
+                        {
+                            "id": "agatti",
+                            "title": "Agatti Island",
+                            "city": "Agatti",
+                            "coords": [
+                                10.8500,
+                                72.2000
+                            ],
+                            "era": "Natural Heritage",
+                            "category": "Nature",
+                            "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=400&q=80",
+                            "description": "Agatti Island is known for its stunning coral reefs, clear lagoons, and vibrant marine biodiversity. It serves as the gateway to Lakshadweep. The island is ideal for snorkeling, diving, and experiencing untouched natural beauty.",
+                            "articleLink": "https://www.google.com/search?q=Agatti+Island+Lakshadweep"
+                        },
+                        {
+                            "id": "bangaram",
+                            "title": "Bangaram Atoll",
+                            "city": "Bangaram",
+                            "coords": [
+                                10.9500,
+                                72.2833
+                            ],
+                            "era": "Natural Heritage",
+                            "category": "Nature",
+                            "image": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=400&q=80",
+                            "description": "Bangaram Atoll is a secluded island known for its turquoise waters and coral ecosystems. It is a popular destination for water sports and eco-tourism. The atoll represents the untouched charm of Lakshadweep’s marine environment.",
+                            "articleLink": "https://www.google.com/search?q=Bangaram+Atoll+Lakshadweep"
+                        }
+                    ]
+                },
+                {
+                    "sectionTitle": "Culture and Traditions",
+                    "items": [
+                        {
+                            "id": "lava",
+                            "title": "Lava Dance",
+                            "city": "Kavaratti",
+                            "coords": [
+                                10.5669,
+                                72.6369
+                            ],
+                            "era": "Traditional Folk Era",
+                            "category": "Performing Arts",
+                            "image": "https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=400&q=80",
+                            "description": "Lava dance is a traditional folk performance of Lakshadweep, often accompanied by rhythmic drum beats. It reflects the islanders’ connection to the sea and their cultural expressions. The dance is performed during festivals and celebrations.",
+                            "articleLink": "https://www.google.com/search?q=Lava+dance+Lakshadweep"
+                        },
+                        {
+                            "id": "mosque",
+                            "title": "Ujra Mosque",
+                            "city": "Kavaratti",
+                            "coords": [
+                                10.5669,
+                                72.6369
+                            ],
+                            "era": "Traditional Heritage",
+                            "category": "Religious Heritage",
+                            "image": "https://images.unsplash.com/photo-1593697820988-37e6d7a3a065?auto=format&fit=crop&w=400&q=80",
+                            "description": "Ujra Mosque in Kavaratti is known for its simple yet elegant architecture and peaceful surroundings. It reflects the strong Islamic cultural influence in Lakshadweep. The mosque is an important spiritual center for locals.",
+                            "articleLink": "https://www.google.com/search?q=Ujra+Mosque+Lakshadweep"
+                        }
+                    ]
+                },
+                {
+                    "sectionTitle": "Cuisine and Language",
+                    "items": [
+                        {
+                            "id": "islandfood",
+                            "title": "Lakshadweep Cuisine",
+                            "city": "Kavaratti",
+                            "coords": [
+                                10.5669,
+                                72.6369
+                            ],
+                            "era": "Coastal Culinary Tradition",
+                            "category": "Cuisine",
+                            "image": "https://images.unsplash.com/photo-1601050690117-94f5f6fa5b5e?auto=format&fit=crop&w=400&q=80",
+                            "description": "Lakshadweep cuisine is heavily based on seafood, coconut, and rice. Dishes are simple yet flavorful, influenced by Kerala cuisine. The food reflects the island lifestyle and abundant marine resources.",
+                            "articleLink": "https://www.google.com/search?q=Lakshadweep+cuisine+seafood"
+                        },
+                        {
+                            "id": "malayalam",
+                            "title": "Malayalam and Mahl Languages",
+                            "city": "Kavaratti",
+                            "coords": [
+                                10.5669,
+                                72.6369
+                            ],
+                            "era": "Regional Linguistic Tradition",
+                            "category": "Linguistics",
+                            "image": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=400&q=80",
+                            "description": "Malayalam is widely spoken in Lakshadweep, along with Mahl, a dialect of Divehi. These languages reflect the cultural connections with Kerala and the Maldives. They play a key role in the islands’ identity.",
+                            "articleLink": "https://www.google.com/search?q=Languages+in+Lakshadweep"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

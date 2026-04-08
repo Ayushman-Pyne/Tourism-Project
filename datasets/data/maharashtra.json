@@ -1,0 +1,114 @@
+{
+    "states": {
+        "Maharashtra": {
+            "heading": "The Dynamic Heritage of Maharashtra",
+            "introduction": "Maharashtra blends ancient caves, powerful Maratha history, and vibrant urban culture into a uniquely diverse experience. From rock-cut architecture to grand festivals and rich cuisine, the state offers a journey through both India’s past and its modern energy.",
+            "coords": [
+                19.7515,
+                75.7139
+            ],
+            "zoom": 6,
+            "sections": [
+                {
+                    "sectionTitle": "Historical and Architectural Legacy",
+                    "items": [
+                        {
+                            "id": "ajanta",
+                            "title": "Ajanta Caves",
+                            "city": "Aurangabad",
+                            "coords": [
+                                20.5519,
+                                75.7033
+                            ],
+                            "era": "2nd BCE–6th Century",
+                            "category": "History",
+                            "image": "https://images.unsplash.com/photo-1582555172866-f73bb12a2ab3?auto=format&fit=crop&w=400&q=80",
+                            "description": "The Ajanta Caves are a series of ancient rock-cut Buddhist caves known for their exquisite paintings and sculptures. These UNESCO sites depict stories from the Jataka tales and showcase early Indian art. They remain a masterpiece of spiritual and artistic expression.",
+                            "articleLink": "https://www.google.com/search?q=Ajanta+Caves+history"
+                        },
+                        {
+                            "id": "ellora",
+                            "title": "Ellora Caves",
+                            "city": "Aurangabad",
+                            "coords": [
+                                20.0268,
+                                75.1790
+                            ],
+                            "era": "6th–10th Century",
+                            "category": "Architecture",
+                            "image": "https://images.unsplash.com/photo-1599661046827-dacff0c0f3c2?auto=format&fit=crop&w=400&q=80",
+                            "description": "Ellora Caves feature a remarkable blend of Hindu, Buddhist, and Jain monuments carved into rock. The Kailasa Temple, carved from a single rock, is a highlight of ancient engineering. The site reflects religious harmony and artistic brilliance.",
+                            "articleLink": "https://www.google.com/search?q=Ellora+Caves+Kailasa+Temple"
+                        }
+                    ]
+                },
+                {
+                    "sectionTitle": "Festivals and Cultural Life",
+                    "items": [
+                        {
+                            "id": "ganesh",
+                            "title": "Ganesh Chaturthi",
+                            "city": "Mumbai",
+                            "coords": [
+                                19.0760,
+                                72.8777
+                            ],
+                            "era": "19th Century Revival",
+                            "category": "Festivals",
+                            "image": "https://images.unsplash.com/photo-1590080875515-8ec64895b423?auto=format&fit=crop&w=400&q=80",
+                            "description": "Ganesh Chaturthi is Maharashtra’s most celebrated festival, marked by grand idols, processions, and community gatherings. Revived during the freedom movement, it symbolizes unity and devotion. Mumbai hosts some of the most elaborate celebrations.",
+                            "articleLink": "https://www.google.com/search?q=Ganesh+Chaturthi+Mumbai"
+                        },
+                        {
+                            "id": "lavani",
+                            "title": "Lavani Dance",
+                            "city": "Pune",
+                            "coords": [
+                                18.5204,
+                                73.8567
+                            ],
+                            "era": "18th Century",
+                            "category": "Performing Arts",
+                            "image": "https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=400&q=80",
+                            "description": "Lavani is a traditional dance form known for its powerful rhythm, expressive gestures, and vibrant costumes. Performed to the beats of the dholki, it blends storytelling with entertainment. It reflects the cultural richness of rural Maharashtra.",
+                            "articleLink": "https://www.google.com/search?q=Lavani+dance+Maharashtra"
+                        }
+                    ]
+                },
+                {
+                    "sectionTitle": "Cuisine and Language",
+                    "items": [
+                        {
+                            "id": "maharashtracuisine",
+                            "title": "Maharashtrian Cuisine",
+                            "city": "Nagpur",
+                            "coords": [
+                                21.1458,
+                                79.0882
+                            ],
+                            "era": "Regional Culinary Tradition",
+                            "category": "Cuisine",
+                            "image": "https://images.unsplash.com/photo-1601050690117-94f5f6fa5b5e?auto=format&fit=crop&w=400&q=80",
+                            "description": "Maharashtrian cuisine ranges from spicy Kolhapuri dishes to coastal seafood delicacies. Staples like bhakri, vada pav, and puran poli define its identity. The cuisine reflects the state’s geographical and cultural diversity.",
+                            "articleLink": "https://www.google.com/search?q=Maharashtrian+cuisine+vada+pav"
+                        },
+                        {
+                            "id": "marathi",
+                            "title": "Marathi Language",
+                            "city": "Mumbai",
+                            "coords": [
+                                19.0760,
+                                72.8777
+                            ],
+                            "era": "Medieval Origins",
+                            "category": "Linguistics",
+                            "image": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=400&q=80",
+                            "description": "Marathi is the official language of Maharashtra with a rich literary tradition dating back centuries. It evolved from Prakrit languages and played a key role during the Maratha Empire. Today, it remains central to the state’s cultural identity.",
+                            "articleLink": "https://www.google.com/search?q=Marathi+language+history"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

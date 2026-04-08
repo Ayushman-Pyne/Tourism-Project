@@ -1,0 +1,114 @@
+{
+    "states": {
+        "Uttarakhand": {
+            "heading": "The Sacred Himalayas of Uttarakhand",
+            "introduction": "Uttarakhand, known as the ‘Land of Gods’, is a spiritual haven nestled in the Himalayas. With sacred rivers, ancient temples, and breathtaking landscapes, the state offers a unique blend of devotion, adventure, and natural beauty.",
+            "coords": [
+                30.0668,
+                79.0193
+            ],
+            "zoom": 7,
+            "sections": [
+                {
+                    "sectionTitle": "Spiritual and Religious Heritage",
+                    "items": [
+                        {
+                            "id": "kedarnath",
+                            "title": "Kedarnath Temple",
+                            "city": "Kedarnath",
+                            "coords": [
+                                30.7352,
+                                79.0669
+                            ],
+                            "era": "Ancient Era",
+                            "category": "Religious Heritage",
+                            "image": "https://images.unsplash.com/photo-1624948465027-6f9d1c2f7c73?auto=format&fit=crop&w=400&q=80",
+                            "description": "Kedarnath Temple is one of the most sacred shrines dedicated to Lord Shiva and part of the Char Dham pilgrimage. Surrounded by snow-capped peaks, it offers a powerful spiritual experience. The temple symbolizes devotion and resilience.",
+                            "articleLink": "https://www.google.com/search?q=Kedarnath+Temple"
+                        },
+                        {
+                            "id": "rishikesh",
+                            "title": "Rishikesh and Ganga Aarti",
+                            "city": "Rishikesh",
+                            "coords": [
+                                30.0869,
+                                78.2676
+                            ],
+                            "era": "Ancient Spiritual Tradition",
+                            "category": "Spiritual Culture",
+                            "image": "https://images.unsplash.com/photo-1582555172866-f73bb12a2ab3?auto=format&fit=crop&w=400&q=80",
+                            "description": "Rishikesh is known as the ‘Yoga Capital of the World’ and a major spiritual destination. The evening Ganga Aarti on the riverbanks is a mesmerizing ritual of devotion. The town attracts seekers, yogis, and travelers from around the globe.",
+                            "articleLink": "https://www.google.com/search?q=Rishikesh+Ganga+Aarti"
+                        }
+                    ]
+                },
+                {
+                    "sectionTitle": "Nature and Cultural Landscape",
+                    "items": [
+                        {
+                            "id": "valley",
+                            "title": "Valley of Flowers",
+                            "city": "Chamoli",
+                            "coords": [
+                                30.7280,
+                                79.6040
+                            ],
+                            "era": "Natural Heritage",
+                            "category": "Nature",
+                            "image": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=400&q=80",
+                            "description": "The Valley of Flowers is a UNESCO World Heritage site known for its stunning alpine meadows and diverse flora. It blooms with vibrant colors during the monsoon season. The valley is a paradise for nature lovers and trekkers.",
+                            "articleLink": "https://www.google.com/search?q=Valley+of+Flowers+Uttarakhand"
+                        },
+                        {
+                            "id": "nanda",
+                            "title": "Nanda Devi Festival",
+                            "city": "Almora",
+                            "coords": [
+                                29.5971,
+                                79.6591
+                            ],
+                            "era": "Traditional Festival",
+                            "category": "Festivals",
+                            "image": "https://images.unsplash.com/photo-1587334274328-64186a80f7b5?auto=format&fit=crop&w=400&q=80",
+                            "description": "The Nanda Devi Festival is a vibrant cultural event celebrating the local deity Nanda Devi. It includes processions, music, and traditional rituals. The festival reflects the deep-rooted faith and cultural identity of the Kumaon region.",
+                            "articleLink": "https://www.google.com/search?q=Nanda+Devi+Festival+Uttarakhand"
+                        }
+                    ]
+                },
+                {
+                    "sectionTitle": "Cuisine and Language",
+                    "items": [
+                        {
+                            "id": "uttarakhandcuisine",
+                            "title": "Garhwali Cuisine",
+                            "city": "Dehradun",
+                            "coords": [
+                                30.3165,
+                                78.0322
+                            ],
+                            "era": "Traditional Mountain Cuisine",
+                            "category": "Cuisine",
+                            "image": "https://images.unsplash.com/photo-1601050690117-94f5f6fa5b5e?auto=format&fit=crop&w=400&q=80",
+                            "description": "Garhwali cuisine is simple, nutritious, and suited to the mountainous terrain. Dishes like kafuli and chainsoo use local grains and greens. The cuisine reflects the resourcefulness and lifestyle of hill communities.",
+                            "articleLink": "https://www.google.com/search?q=Garhwali+cuisine+Uttarakhand"
+                        },
+                        {
+                            "id": "garhwali",
+                            "title": "Garhwali Language",
+                            "city": "Pauri",
+                            "coords": [
+                                30.1500,
+                                78.7833
+                            ],
+                            "era": "Regional Dialect Tradition",
+                            "category": "Linguistics",
+                            "image": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=400&q=80",
+                            "description": "Garhwali is a regional language spoken in the Garhwal region of Uttarakhand. It carries a rich oral tradition of folk songs and stories. The language is an important part of the cultural identity of the hill people.",
+                            "articleLink": "https://www.google.com/search?q=Garhwali+language+Uttarakhand"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

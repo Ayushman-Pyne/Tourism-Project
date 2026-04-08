@@ -1,0 +1,114 @@
+{
+    "states": {
+        "Tamil Nadu": {
+            "heading": "The Timeless Dravidian Legacy of Tamil Nadu",
+            "introduction": "Tamil Nadu is a land of ancient temples, classical arts, and one of the world’s oldest living cultures. From towering Dravidian architecture to Bharatanatyam and rich literary traditions, the state offers a deeply immersive journey into South India’s enduring heritage.",
+            "coords": [
+                11.1271,
+                78.6569
+            ],
+            "zoom": 6,
+            "sections": [
+                {
+                    "sectionTitle": "Temple Architecture and Heritage",
+                    "items": [
+                        {
+                            "id": "meenakshi",
+                            "title": "Meenakshi Temple",
+                            "city": "Madurai",
+                            "coords": [
+                                9.9195,
+                                78.1193
+                            ],
+                            "era": "Ancient to Medieval",
+                            "category": "Religious Heritage",
+                            "image": "https://images.unsplash.com/photo-1624948465027-6f9d1c2f7c73?auto=format&fit=crop&w=400&q=80",
+                            "description": "The Meenakshi Amman Temple in Madurai is a masterpiece of Dravidian architecture, known for its towering gopurams and intricate sculptures. Dedicated to Goddess Meenakshi, it is a major pilgrimage site. The temple reflects centuries of artistic and spiritual tradition.",
+                            "articleLink": "https://www.google.com/search?q=Meenakshi+Temple+Madurai"
+                        },
+                        {
+                            "id": "brihadeeswara",
+                            "title": "Brihadeeswara Temple",
+                            "city": "Thanjavur",
+                            "coords": [
+                                10.7828,
+                                79.1318
+                            ],
+                            "era": "11th Century",
+                            "category": "Architecture",
+                            "image": "https://images.unsplash.com/photo-1609948543911-cb5c2f4bcb64?auto=format&fit=crop&w=400&q=80",
+                            "description": "Built by the Chola dynasty, Brihadeeswara Temple is a UNESCO World Heritage site known for its massive scale and precision. Its towering vimana and detailed carvings highlight advanced engineering. The temple stands as a symbol of Tamil architectural brilliance.",
+                            "articleLink": "https://www.google.com/search?q=Brihadeeswara+Temple+Thanjavur"
+                        }
+                    ]
+                },
+                {
+                    "sectionTitle": "Arts and Cultural Traditions",
+                    "items": [
+                        {
+                            "id": "bharatanatyam",
+                            "title": "Bharatanatyam Dance",
+                            "city": "Chennai",
+                            "coords": [
+                                13.0827,
+                                80.2707
+                            ],
+                            "era": "Ancient Classical Tradition",
+                            "category": "Performing Arts",
+                            "image": "https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=400&q=80",
+                            "description": "Bharatanatyam is one of India’s oldest classical dance forms, originating in Tamil Nadu’s temples. Known for its expressive gestures and rhythmic footwork, it tells stories from mythology. The dance is a cornerstone of Tamil cultural identity.",
+                            "articleLink": "https://www.google.com/search?q=Bharatanatyam+dance+Tamil+Nadu"
+                        },
+                        {
+                            "id": "kolam",
+                            "title": "Kolam Art",
+                            "city": "Madurai",
+                            "coords": [
+                                9.9195,
+                                78.1193
+                            ],
+                            "era": "Ancient Tradition",
+                            "category": "Folk Art",
+                            "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=400&q=80",
+                            "description": "Kolam is a traditional form of drawing geometric patterns at the entrances of homes using rice flour. It is both decorative and symbolic, representing prosperity and harmony. The practice reflects everyday artistic expression in Tamil culture.",
+                            "articleLink": "https://www.google.com/search?q=Kolam+art+Tamil+Nadu"
+                        }
+                    ]
+                },
+                {
+                    "sectionTitle": "Cuisine and Language",
+                    "items": [
+                        {
+                            "id": "tamilcuisine",
+                            "title": "Tamil Cuisine",
+                            "city": "Coimbatore",
+                            "coords": [
+                                11.0168,
+                                76.9558
+                            ],
+                            "era": "Traditional Culinary Heritage",
+                            "category": "Cuisine",
+                            "image": "https://images.unsplash.com/photo-1601050690117-94f5f6fa5b5e?auto=format&fit=crop&w=400&q=80",
+                            "description": "Tamil cuisine is known for its diverse flavors, including dishes like dosa, idli, and sambar. Meals are often served on banana leaves and emphasize balance and nutrition. The cuisine reflects both tradition and regional variation.",
+                            "articleLink": "https://www.google.com/search?q=Tamil+Nadu+cuisine+dosa+idli"
+                        },
+                        {
+                            "id": "tamil",
+                            "title": "Tamil Language",
+                            "city": "Chennai",
+                            "coords": [
+                                13.0827,
+                                80.2707
+                            ],
+                            "era": "Ancient Classical Language",
+                            "category": "Linguistics",
+                            "image": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=400&q=80",
+                            "description": "Tamil is one of the oldest continuously used languages in the world, with a literary tradition spanning over two millennia. It is a classical language with rich poetry, philosophy, and history. Tamil remains central to the identity of the state.",
+                            "articleLink": "https://www.google.com/search?q=Tamil+language+history"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

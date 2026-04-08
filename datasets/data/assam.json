@@ -1,0 +1,156 @@
+{
+    "states": {
+        "Assam": {
+            "heading": "The Hidden Tapestry of Assam",
+            "introduction": "Assam, the gateway to Northeast India, offers a rich blend of culture, history, and linguistic diversity shaped by the Brahmaputra Valley. From vibrant festivals and exquisite silk traditions to ancient manuscripts and rare languages, the state reveals a heritage that is both deeply rooted and uniquely diverse.",
+            "coords": [
+                26.2006,
+                92.9376
+            ],
+            "zoom": 6,
+            "sections": [
+                {
+                    "sectionTitle": "Vibrant Culture of Assam: A Syncretic Mosaic",
+                    "items": [
+                        {
+                            "id": "bihu",
+                            "title": "Bihu Festivals",
+                            "city": "Guwahati",
+                            "coords": [
+                                26.1445,
+                                91.7362
+                            ],
+                            "era": "Ancient Agrarian Tradition",
+                            "category": "Festivals",
+                            "image": "https://images.unsplash.com/photo-1603297631958-0c9f6b6a8b7f?auto=format&fit=crop&w=400&q=80",
+                            "description": "Bihu, Assam’s most celebrated festival, marks the agricultural cycle with music, dance, and community gatherings. Rongali Bihu ushers in the Assamese New Year with vibrant performances and traditional foods. It stands out as a secular celebration that unites people across cultures.",
+                            "articleLink": "https://www.google.com/search?q=Bihu+festival+Assam"
+                        },
+                        {
+                            "id": "silk",
+                            "title": "Assam Silk Traditions",
+                            "city": "Sualkuchi",
+                            "coords": [
+                                26.1680,
+                                91.5700
+                            ],
+                            "era": "Centuries-old Craft",
+                            "category": "Craftsmanship",
+                            "image": "https://images.unsplash.com/photo-1594736797933-d0401ba2fe65?auto=format&fit=crop&w=400&q=80",
+                            "description": "Known as the silk village of Assam, Sualkuchi produces exquisite varieties like Muga, Eri, and Pat silk. The mekhela chador reflects generations of weaving expertise. These textiles are not just garments but symbols of cultural identity and artistic excellence.",
+                            "articleLink": "https://www.google.com/search?q=Assam+silk+Sualkuchi"
+                        },
+                        {
+                            "id": "cuisine",
+                            "title": "Axomiya Cuisine",
+                            "city": "Guwahati",
+                            "coords": [
+                                26.1445,
+                                91.7362
+                            ],
+                            "era": "Traditional Culinary Heritage",
+                            "category": "Cuisine",
+                            "image": "https://images.unsplash.com/photo-1604908176997-431f5cbb8a58?auto=format&fit=crop&w=400&q=80",
+                            "description": "Assamese cuisine is known for its subtle flavors, minimal spices, and reliance on fresh, local ingredients. Unique elements like khar and fermented bamboo shoots define its identity. Dishes such as masor tenga reflect a deep connection to the region’s ecology.",
+                            "articleLink": "https://www.google.com/search?q=Assamese+cuisine+khar+masor+tenga"
+                        }
+                    ]
+                },
+                {
+                    "sectionTitle": "Manuscripts of Assam: Preserving Pre-Colonial Knowledge",
+                    "items": [
+                        {
+                            "id": "illustration",
+                            "title": "Golden Age of Manuscript Illustration",
+                            "city": "Sivasagar",
+                            "coords": [
+                                26.9843,
+                                94.6378
+                            ],
+                            "era": "16th–18th Century",
+                            "category": "Art & Literature",
+                            "image": "https://images.unsplash.com/photo-1589998059171-988d887df646?auto=format&fit=crop&w=400&q=80",
+                            "description": "Under Ahom patronage, Assam saw a flourishing of illustrated manuscripts combining religion, art, and scholarship. Texts like the Bhagavata Purana were translated and decorated with intricate paintings. These works used natural pigments and showcased refined artistic traditions.",
+                            "articleLink": "https://www.google.com/search?q=Assam+manuscript+illustration+Ahom+dynasty"
+                        },
+                        {
+                            "id": "hastividyarnava",
+                            "title": "Hastividyarnava Manuscript",
+                            "city": "Sivasagar",
+                            "coords": [
+                                26.9843,
+                                94.6378
+                            ],
+                            "era": "18th Century",
+                            "category": "History",
+                            "image": "https://images.unsplash.com/photo-1598514982901-1a4a7e8c7c02?auto=format&fit=crop&w=400&q=80",
+                            "description": "The Hastividyarnava is a remarkable illustrated manuscript detailing the science of elephants. Commissioned by Ahom royalty, it blends natural history with artistic brilliance. Its detailed paintings offer rare insights into royal practices and animal knowledge.",
+                            "articleLink": "https://www.google.com/search?q=Hastividyarnava+Assam"
+                        },
+                        {
+                            "id": "sattra",
+                            "title": "Sattra Manuscript Libraries",
+                            "city": "Majuli",
+                            "coords": [
+                                26.9500,
+                                94.1700
+                            ],
+                            "era": "Medieval to Present",
+                            "category": "Heritage",
+                            "image": "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?auto=format&fit=crop&w=400&q=80",
+                            "description": "The Vaishnavite monasteries of Majuli house centuries-old manuscripts preserved on sanchi pat. These collections include religious texts and artistic works that survived floods and invasions. They remain living centers of culture and spirituality.",
+                            "articleLink": "https://www.google.com/search?q=Majuli+Sattra+manuscripts"
+                        }
+                    ]
+                },
+                {
+                    "sectionTitle": "Local Languages of Assam: A Linguistic Frontier",
+                    "items": [
+                        {
+                            "id": "assamese",
+                            "title": "Assamese Language",
+                            "city": "Guwahati",
+                            "coords": [
+                                26.1445,
+                                91.7362
+                            ],
+                            "era": "13th Century Origins",
+                            "category": "Linguistics",
+                            "image": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=400&q=80",
+                            "description": "Assamese, the lingua franca of the Brahmaputra Valley, has evolved from ancient Prakrit roots. Influenced by Tibeto-Burman languages, it features unique traits like the absence of grammatical gender. Its literary tradition dates back to early medieval compositions.",
+                            "articleLink": "https://www.google.com/search?q=Assamese+language+history"
+                        },
+                        {
+                            "id": "bodo",
+                            "title": "Bodo Language",
+                            "city": "Kokrajhar",
+                            "coords": [
+                                26.4000,
+                                90.2700
+                            ],
+                            "era": "Indigenous Heritage",
+                            "category": "Linguistics",
+                            "image": "https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=400&q=80",
+                            "description": "Bodo is one of the most prominent indigenous languages of Assam and is constitutionally recognized. Spoken by the Bodo people, it carries a growing literary tradition. It reflects the deep-rooted identity and cultural heritage of the region.",
+                            "articleLink": "https://www.google.com/search?q=Bodo+language+Assam"
+                        },
+                        {
+                            "id": "preservation",
+                            "title": "Language Preservation Movements",
+                            "city": "Dispur",
+                            "coords": [
+                                26.1433,
+                                91.7898
+                            ],
+                            "era": "Modern Era",
+                            "category": "Culture & Policy",
+                            "image": "https://images.unsplash.com/photo-1456324463128-7ff6903988d8?auto=format&fit=crop&w=400&q=80",
+                            "description": "Efforts to preserve Assam’s linguistic diversity have intensified in recent decades. Initiatives include digitizing manuscripts and protecting endangered languages. These movements ensure that the region’s rich linguistic heritage continues into the future.",
+                            "articleLink": "https://www.google.com/search?q=Assam+language+preservation+efforts"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

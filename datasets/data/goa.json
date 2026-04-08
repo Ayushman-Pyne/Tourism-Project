@@ -1,0 +1,114 @@
+{
+    "states": {
+        "Goa": {
+            "heading": "The Cultural Coastline of Goa",
+            "introduction": "Goa is far more than beaches—it is a vibrant blend of Indian and Portuguese heritage, reflected in its architecture, cuisine, and traditions. From historic churches to lively festivals and coastal lifestyles, the state offers a uniquely layered cultural experience.",
+            "coords": [
+                15.2993,
+                74.1240
+            ],
+            "zoom": 7,
+            "sections": [
+                {
+                    "sectionTitle": "Colonial Heritage and Architecture",
+                    "items": [
+                        {
+                            "id": "bomjesus",
+                            "title": "Basilica of Bom Jesus",
+                            "city": "Old Goa",
+                            "coords": [
+                                15.5009,
+                                73.9110
+                            ],
+                            "era": "16th Century Colonial",
+                            "category": "Religious Heritage",
+                            "image": "https://images.unsplash.com/photo-1583241800698-6f4fdb3b2d77?auto=format&fit=crop&w=400&q=80",
+                            "description": "The Basilica of Bom Jesus is one of Goa’s most iconic churches and a UNESCO World Heritage site. It houses the mortal remains of St. Francis Xavier and showcases classic Baroque architecture. The church reflects Goa’s deep-rooted colonial and religious history.",
+                            "articleLink": "https://www.google.com/search?q=Basilica+of+Bom+Jesus+Goa"
+                        },
+                        {
+                            "id": "fontainhas",
+                            "title": "Fontainhas Latin Quarter",
+                            "city": "Panaji",
+                            "coords": [
+                                15.4989,
+                                73.8278
+                            ],
+                            "era": "Portuguese Era",
+                            "category": "Architecture",
+                            "image": "https://images.unsplash.com/photo-1600585152915-d208bec867a1?auto=format&fit=crop&w=400&q=80",
+                            "description": "Fontainhas, the Latin Quarter of Panaji, is known for its colorful Portuguese-style houses and narrow winding streets. It offers a glimpse into Goa’s colonial past with preserved architecture and cultural charm. Walking through it feels like stepping back in time.",
+                            "articleLink": "https://www.google.com/search?q=Fontainhas+Goa+Latin+Quarter"
+                        }
+                    ]
+                },
+                {
+                    "sectionTitle": "Festivals and Cultural Life",
+                    "items": [
+                        {
+                            "id": "carnival",
+                            "title": "Goa Carnival",
+                            "city": "Panaji",
+                            "coords": [
+                                15.4989,
+                                73.8278
+                            ],
+                            "era": "Colonial Tradition",
+                            "category": "Festivals",
+                            "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=400&q=80",
+                            "description": "The Goa Carnival is a lively festival introduced during Portuguese rule, featuring parades, music, and vibrant costumes. Celebrated before Lent, it brings together locals and tourists in a grand celebration. Its energy and color make it a unique cultural spectacle.",
+                            "articleLink": "https://www.google.com/search?q=Goa+Carnival+festival"
+                        },
+                        {
+                            "id": "shigmo",
+                            "title": "Shigmo Festival",
+                            "city": "Ponda",
+                            "coords": [
+                                15.4030,
+                                74.0150
+                            ],
+                            "era": "Traditional Spring Festival",
+                            "category": "Festivals",
+                            "image": "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=400&q=80",
+                            "description": "Shigmo is a vibrant spring festival celebrated by the Hindu community of Goa with folk dances, music, and colorful parades. It showcases mythological themes and traditional performances. The festival highlights Goa’s indigenous cultural roots beyond its colonial identity.",
+                            "articleLink": "https://www.google.com/search?q=Shigmo+festival+Goa"
+                        }
+                    ]
+                },
+                {
+                    "sectionTitle": "Cuisine and Coastal Identity",
+                    "items": [
+                        {
+                            "id": "goancuisine",
+                            "title": "Goan Cuisine",
+                            "city": "Margao",
+                            "coords": [
+                                15.2832,
+                                73.9862
+                            ],
+                            "era": "Indo-Portuguese Fusion",
+                            "category": "Cuisine",
+                            "image": "https://images.unsplash.com/photo-1604908177522-4295d1e0c1d3?auto=format&fit=crop&w=400&q=80",
+                            "description": "Goan cuisine is a flavorful blend of Indian spices and Portuguese influences, known for dishes like vindaloo and xacuti. Seafood, coconut, and vinegar are key ingredients. This fusion creates a distinctive culinary identity unique to the region.",
+                            "articleLink": "https://www.google.com/search?q=Goan+cuisine+vindaloo+xacuti"
+                        },
+                        {
+                            "id": "konkani",
+                            "title": "Konkani Language",
+                            "city": "Panaji",
+                            "coords": [
+                                15.4989,
+                                73.8278
+                            ],
+                            "era": "Ancient Coastal Language",
+                            "category": "Linguistics",
+                            "image": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=400&q=80",
+                            "description": "Konkani is the official language of Goa, spoken widely across the coastal region. It has evolved through centuries with influences from Marathi, Portuguese, and Kannada. Its rich oral and literary traditions reflect Goa’s diverse cultural heritage.",
+                            "articleLink": "https://www.google.com/search?q=Konkani+language+Goa"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

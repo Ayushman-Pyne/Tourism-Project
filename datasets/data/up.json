@@ -1,0 +1,114 @@
+{
+    "states": {
+        "Uttar Pradesh": {
+            "heading": "The Timeless Heritage of Uttar Pradesh",
+            "introduction": "Uttar Pradesh is a cultural and historical powerhouse of India, home to ancient cities, iconic monuments, and spiritual traditions. From the Taj Mahal to sacred rivers and vibrant festivals, the state offers a profound journey through India’s history and faith.",
+            "coords": [
+                26.8467,
+                80.9462
+            ],
+            "zoom": 6,
+            "sections": [
+                {
+                    "sectionTitle": "Historical and Architectural Legacy",
+                    "items": [
+                        {
+                            "id": "taj",
+                            "title": "Taj Mahal",
+                            "city": "Agra",
+                            "coords": [
+                                27.1751,
+                                78.0421
+                            ],
+                            "era": "17th Century",
+                            "category": "Architecture",
+                            "image": "https://images.unsplash.com/photo-1585136918230-0a1cfa2c1f57?auto=format&fit=crop&w=400&q=80",
+                            "description": "The Taj Mahal is one of the world’s most iconic monuments, built by Emperor Shah Jahan in memory of his wife Mumtaz Mahal. Its white marble beauty and symmetry make it a UNESCO World Heritage site. It symbolizes eternal love and Mughal architecture.",
+                            "articleLink": "https://www.google.com/search?q=Taj+Mahal+Agra"
+                        },
+                        {
+                            "id": "varanasi",
+                            "title": "Varanasi Ghats",
+                            "city": "Varanasi",
+                            "coords": [
+                                25.3176,
+                                82.9739
+                            ],
+                            "era": "Ancient Era",
+                            "category": "Religious Heritage",
+                            "image": "https://images.unsplash.com/photo-1582555172866-f73bb12a2ab3?auto=format&fit=crop&w=400&q=80",
+                            "description": "Varanasi is one of the oldest living cities in the world, known for its sacred ghats along the Ganges River. Pilgrims gather here for rituals, prayers, and cremation ceremonies. The city represents spiritual continuity and devotion.",
+                            "articleLink": "https://www.google.com/search?q=Varanasi+ghats+Ganges"
+                        }
+                    ]
+                },
+                {
+                    "sectionTitle": "Festivals and Cultural Life",
+                    "items": [
+                        {
+                            "id": "kumbh",
+                            "title": "Kumbh Mela",
+                            "city": "Prayagraj",
+                            "coords": [
+                                25.4358,
+                                81.8463
+                            ],
+                            "era": "Ancient Tradition",
+                            "category": "Festivals",
+                            "image": "https://images.unsplash.com/photo-1587334274328-64186a80f7b5?auto=format&fit=crop&w=400&q=80",
+                            "description": "Kumbh Mela is the largest religious gathering in the world, held periodically in Prayagraj. Millions of devotees come to take a holy dip at the confluence of rivers. The event reflects deep spiritual faith and cultural unity.",
+                            "articleLink": "https://www.google.com/search?q=Kumbh+Mela+Prayagraj"
+                        },
+                        {
+                            "id": "kathak",
+                            "title": "Kathak Dance",
+                            "city": "Lucknow",
+                            "coords": [
+                                26.8467,
+                                80.9462
+                            ],
+                            "era": "Medieval Era",
+                            "category": "Performing Arts",
+                            "image": "https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=400&q=80",
+                            "description": "Kathak is a classical dance form that flourished in the courts of North India, especially in Lucknow. Known for its intricate footwork and expressive storytelling, it blends Hindu and Mughal influences. It remains a major cultural art form.",
+                            "articleLink": "https://www.google.com/search?q=Kathak+dance+Lucknow"
+                        }
+                    ]
+                },
+                {
+                    "sectionTitle": "Cuisine and Language",
+                    "items": [
+                        {
+                            "id": "upcuisine",
+                            "title": "Awadhi Cuisine",
+                            "city": "Lucknow",
+                            "coords": [
+                                26.8467,
+                                80.9462
+                            ],
+                            "era": "Mughal Culinary Tradition",
+                            "category": "Cuisine",
+                            "image": "https://images.unsplash.com/photo-1601050690117-94f5f6fa5b5e?auto=format&fit=crop&w=400&q=80",
+                            "description": "Awadhi cuisine is known for its rich flavors and slow-cooked dishes like biryani and kebabs. Originating from the royal kitchens of Lucknow, it emphasizes aroma and texture. The cuisine reflects the elegance of Mughal culinary traditions.",
+                            "articleLink": "https://www.google.com/search?q=Awadhi+cuisine+Lucknow"
+                        },
+                        {
+                            "id": "hindi",
+                            "title": "Hindi Language",
+                            "city": "Lucknow",
+                            "coords": [
+                                26.8467,
+                                80.9462
+                            ],
+                            "era": "Modern Literary Tradition",
+                            "category": "Linguistics",
+                            "image": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=400&q=80",
+                            "description": "Hindi is the primary language of Uttar Pradesh and one of the most widely spoken languages in India. It has a rich literary tradition and plays a central role in administration and culture. The language connects diverse communities across the state.",
+                            "articleLink": "https://www.google.com/search?q=Hindi+language+history"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,114 @@
+{
+    "states": {
+        "Rajasthan": {
+            "heading": "The Royal Heritage of Rajasthan",
+            "introduction": "Rajasthan is a land of majestic forts, royal palaces, and vibrant desert culture. Known for its rich history, colorful festivals, and timeless traditions, the state offers a grand journey through India’s regal past and living heritage.",
+            "coords": [
+                27.0238,
+                74.2179
+            ],
+            "zoom": 6,
+            "sections": [
+                {
+                    "sectionTitle": "Royal Architecture and History",
+                    "items": [
+                        {
+                            "id": "amer",
+                            "title": "Amer Fort",
+                            "city": "Jaipur",
+                            "coords": [
+                                26.9855,
+                                75.8513
+                            ],
+                            "era": "16th Century",
+                            "category": "Architecture",
+                            "image": "https://images.unsplash.com/photo-1599661046827-dacff0c0f3c2?auto=format&fit=crop&w=400&q=80",
+                            "description": "Amer Fort is a grand hilltop fortress known for its artistic Hindu-style architecture and intricate mirror work. Overlooking Maota Lake, it showcases the grandeur of Rajput rulers. The fort is a major symbol of Rajasthan’s royal heritage.",
+                            "articleLink": "https://www.google.com/search?q=Amer+Fort+Jaipur"
+                        },
+                        {
+                            "id": "mehrangarh",
+                            "title": "Mehrangarh Fort",
+                            "city": "Jodhpur",
+                            "coords": [
+                                26.2986,
+                                73.0183
+                            ],
+                            "era": "15th Century",
+                            "category": "History",
+                            "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=400&q=80",
+                            "description": "Mehrangarh Fort towers over the city of Jodhpur and is one of the largest forts in India. Its massive walls and richly decorated palaces reflect the power of the Rathore dynasty. The fort offers panoramic views of the blue city below.",
+                            "articleLink": "https://www.google.com/search?q=Mehrangarh+Fort+Jodhpur"
+                        }
+                    ]
+                },
+                {
+                    "sectionTitle": "Festivals and Cultural Traditions",
+                    "items": [
+                        {
+                            "id": "pushkar",
+                            "title": "Pushkar Camel Fair",
+                            "city": "Pushkar",
+                            "coords": [
+                                26.4897,
+                                74.5511
+                            ],
+                            "era": "Traditional Fair",
+                            "category": "Festivals",
+                            "image": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=400&q=80",
+                            "description": "The Pushkar Camel Fair is one of the largest livestock fairs in the world, attracting traders, pilgrims, and tourists. It features camel trading, cultural performances, and religious rituals. The fair reflects the vibrant desert life of Rajasthan.",
+                            "articleLink": "https://www.google.com/search?q=Pushkar+Camel+Fair"
+                        },
+                        {
+                            "id": "ghoomar",
+                            "title": "Ghoomar Dance",
+                            "city": "Udaipur",
+                            "coords": [
+                                24.5854,
+                                73.7125
+                            ],
+                            "era": "Traditional Folk Era",
+                            "category": "Performing Arts",
+                            "image": "https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=400&q=80",
+                            "description": "Ghoomar is a traditional dance performed by women in Rajasthan, known for its graceful spinning movements and colorful attire. It is often performed during festivals and celebrations. The dance reflects the elegance of Rajasthani culture.",
+                            "articleLink": "https://www.google.com/search?q=Ghoomar+dance+Rajasthan"
+                        }
+                    ]
+                },
+                {
+                    "sectionTitle": "Cuisine and Language",
+                    "items": [
+                        {
+                            "id": "rajasthanicuisine",
+                            "title": "Rajasthani Cuisine",
+                            "city": "Bikaner",
+                            "coords": [
+                                28.0229,
+                                73.3119
+                            ],
+                            "era": "Desert Culinary Tradition",
+                            "category": "Cuisine",
+                            "image": "https://images.unsplash.com/photo-1601050690117-94f5f6fa5b5e?auto=format&fit=crop&w=400&q=80",
+                            "description": "Rajasthani cuisine is adapted to the arid climate, featuring dishes like dal baati churma and gatte ki sabzi. It uses preserved ingredients and bold spices. The food reflects the resilience and ingenuity of desert life.",
+                            "articleLink": "https://www.google.com/search?q=Rajasthani+cuisine+dal+baati+churma"
+                        },
+                        {
+                            "id": "marwari",
+                            "title": "Marwari Language",
+                            "city": "Jodhpur",
+                            "coords": [
+                                26.2389,
+                                73.0243
+                            ],
+                            "era": "Regional Dialect Tradition",
+                            "category": "Linguistics",
+                            "image": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=400&q=80",
+                            "description": "Marwari is a widely spoken dialect in Rajasthan, especially in the Marwar region. It carries a rich tradition of folk songs, stories, and oral literature. The language reflects the cultural identity of the region’s people.",
+                            "articleLink": "https://www.google.com/search?q=Marwari+language+Rajasthan"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

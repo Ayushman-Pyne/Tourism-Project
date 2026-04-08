@@ -1,0 +1,114 @@
+{
+    "states": {
+        "Manipur": {
+            "heading": "The Graceful Heritage of Manipur",
+            "introduction": "Manipur, nestled in India’s northeast, is known for its elegant dance traditions, serene landscapes, and deep-rooted cultural heritage. From classical performances to vibrant festivals and unique martial arts, the state offers a refined and spiritual cultural experience.",
+            "coords": [
+                24.6637,
+                93.9063
+            ],
+            "zoom": 7,
+            "sections": [
+                {
+                    "sectionTitle": "Dance and Performing Arts",
+                    "items": [
+                        {
+                            "id": "raslila",
+                            "title": "Manipuri Ras Lila",
+                            "city": "Imphal",
+                            "coords": [
+                                24.8170,
+                                93.9368
+                            ],
+                            "era": "18th Century",
+                            "category": "Performing Arts",
+                            "image": "https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=400&q=80",
+                            "description": "Ras Lila is a classical dance form of Manipur depicting the divine love of Radha and Krishna. Known for its graceful movements and devotional themes, it is performed during religious festivals. The dance reflects the spiritual depth of Manipuri culture.",
+                            "articleLink": "https://www.google.com/search?q=Manipuri+Ras+Lila"
+                        },
+                        {
+                            "id": "thangta",
+                            "title": "Thang-Ta Martial Art",
+                            "city": "Imphal",
+                            "coords": [
+                                24.8170,
+                                93.9368
+                            ],
+                            "era": "Ancient Tradition",
+                            "category": "Martial Arts",
+                            "image": "https://images.unsplash.com/photo-1605647540924-852290f3a8c9?auto=format&fit=crop&w=400&q=80",
+                            "description": "Thang-Ta is a traditional martial art of Manipur involving sword (thang) and spear (ta). It combines combat techniques with ritualistic and performance elements. The art form reflects the warrior heritage of the region.",
+                            "articleLink": "https://www.google.com/search?q=Thang+Ta+martial+art+Manipur"
+                        }
+                    ]
+                },
+                {
+                    "sectionTitle": "Festivals and Cultural Life",
+                    "items": [
+                        {
+                            "id": "yaoshang",
+                            "title": "Yaoshang Festival",
+                            "city": "Imphal",
+                            "coords": [
+                                24.8170,
+                                93.9368
+                            ],
+                            "era": "Traditional Spring Festival",
+                            "category": "Festivals",
+                            "image": "https://images.unsplash.com/photo-1587334274328-64186a80f7b5?auto=format&fit=crop&w=400&q=80",
+                            "description": "Yaoshang is Manipur’s version of Holi, celebrated with colors, music, and traditional sports. The festival lasts for several days and includes cultural performances and community events. It reflects the youthful and energetic spirit of the region.",
+                            "articleLink": "https://www.google.com/search?q=Yaoshang+festival+Manipur"
+                        },
+                        {
+                            "id": "loktak",
+                            "title": "Loktak Lake Culture",
+                            "city": "Bishnupur",
+                            "coords": [
+                                24.5000,
+                                93.8000
+                            ],
+                            "era": "Natural Heritage",
+                            "category": "Nature & Culture",
+                            "image": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=400&q=80",
+                            "description": "Loktak Lake, the largest freshwater lake in northeast India, is known for its floating islands called phumdis. It supports unique lifestyles and ecosystems. The lake is central to the cultural and economic life of Manipur.",
+                            "articleLink": "https://www.google.com/search?q=Loktak+Lake+Manipur+phumdis"
+                        }
+                    ]
+                },
+                {
+                    "sectionTitle": "Cuisine and Language",
+                    "items": [
+                        {
+                            "id": "manipuricuisine",
+                            "title": "Manipuri Cuisine",
+                            "city": "Imphal",
+                            "coords": [
+                                24.8170,
+                                93.9368
+                            ],
+                            "era": "Traditional Culinary Heritage",
+                            "category": "Cuisine",
+                            "image": "https://images.unsplash.com/photo-1601050690117-94f5f6fa5b5e?auto=format&fit=crop&w=400&q=80",
+                            "description": "Manipuri cuisine is known for its simplicity and use of fresh, local ingredients. Fermented fish and bamboo shoots are key components in many dishes. The food reflects a balance between health, tradition, and natural flavors.",
+                            "articleLink": "https://www.google.com/search?q=Manipuri+cuisine+fermented+fish"
+                        },
+                        {
+                            "id": "meitei",
+                            "title": "Meitei Language",
+                            "city": "Imphal",
+                            "coords": [
+                                24.8170,
+                                93.9368
+                            ],
+                            "era": "Ancient Script Tradition",
+                            "category": "Linguistics",
+                            "image": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=400&q=80",
+                            "description": "Meitei, also known as Manipuri, is the official language of the state with its own script called Meitei Mayek. It has a rich literary and cultural tradition. The language plays a central role in preserving Manipur’s identity.",
+                            "articleLink": "https://www.google.com/search?q=Meitei+language+Manipur"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

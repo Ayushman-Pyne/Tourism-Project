@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Map Compiler</title>
+    <script src="https://cdn.jsdelivr.net/npm/@turf/turf@6/turf.min.js"></script>
+    <style>
+        body { font-family: sans-serif; padding: 40px; background: #111; color: #fff; }
+        .log { margin-top: 20px; font-family: monospace; color: #aaa; }
+    </style>
+</head>
+<body>
+    <h1>Merging Map Data...</h1>
+    <p>Please wait. We are using spatial point-in-polygon matching to transplant the names from india.geojson into the unlabelled borders of in.json.</p>
+    <div id="log" class="log">Starting...<br></div>
+
+    <script>
+        const logEl = document.getElementById('log');
+        const log = (msg) => logEl.innerHTML += msg + '<br>';
+
+        async function mergeMaps() {
+            try {
+                log("Fetching in.json (Unlabelled Borders)...");
+                const inRes = await fetch('datasets/map/in.json');
+                const inData = await inRes.json();
+
+                log("Fetching india.geojson (Districts with Labels)...");
+                const indiaRes = await fetch('datasets/map/india.geojson');
+                const indiaData = await indiaRes.json();
+
+                log("Files loaded. Beginning spatial analysis... This might take 5-10 seconds.");
+                
+                // Allow UI to update before heavy blocking loop
+                await new Promise(r => setTimeout(r, 100));
+
+                let unknownCount = 0;
+
+                inData.features.forEach((feature, index) => {
+                    // Create a guaranteed interior point for the unlabelled state polygon
+                    let point = turf.pointOnFeature(feature);
+                    
+                    // Iterate through all 600+ districts to find which one this point falls inside
+                    let match = indiaData.features.find(f => {
+                        try {
+                            return turf.booleanPointInPolygon(point, f);
+                        } catch(e) {
+                            return false; // Safely skip invalid geometries
+                        }
+                    });
+                    
+                    // If we found a matching spatial overlap, steal the state name!
+                    if (match && match.properties && match.properties.st_nm) {
+                        feature.properties = {
+                            st_nm: match.properties.st_nm
+                        };
+                        log(`✓ Matched Polygon ${index} -> ${match.properties.st_nm}`);
+                    } else {
+                        feature.properties = {
+                            st_nm: "Unknown_State_" + index
+                        };
+                        unknownCount++;
+                        log(`⚠ Failed to match Polygon ${index}`);
+                    }
+                });
+
+                log("Spatial merge complete! Preparing file download...");
+
+                // Trigger file download
+                const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(inData));
+                const downloadAnchor = document.createElement('a');
+                downloadAnchor.setAttribute("href", dataStr);
+                downloadAnchor.setAttribute("download", "final_labelled_map.json");
+                document.body.appendChild(downloadAnchor);
+                downloadAnchor.click();
+                downloadAnchor.remove();
+
+                log("<br><b style='color:#d4af37'>Success! The combined file 'final_labelled_map.json' should be downloading to your computer now.</b>");
+            } catch (err) {
+                log("<b style='color:red'>Error occurred: " + err.message + "</b>");
+            }
+        }
+
+        mergeMaps();
+    </script>
+</body>
+</html>

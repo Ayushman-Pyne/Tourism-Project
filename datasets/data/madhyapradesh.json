@@ -1,0 +1,114 @@
+{
+    "states": {
+        "Madhya Pradesh": {
+            "heading": "The Cultural Heart of India",
+            "introduction": "Madhya Pradesh, located at the heart of India, is a treasure trove of ancient temples, tribal traditions, and architectural wonders. From prehistoric cave art to majestic forts and vibrant cultural practices, the state offers a journey through India’s deep historical and artistic roots.",
+            "coords": [
+                23.4733,
+                77.9470
+            ],
+            "zoom": 6,
+            "sections": [
+                {
+                    "sectionTitle": "Ancient Heritage and Architecture",
+                    "items": [
+                        {
+                            "id": "khajuraho",
+                            "title": "Khajuraho Temples",
+                            "city": "Khajuraho",
+                            "coords": [
+                                24.8318,
+                                79.9199
+                            ],
+                            "era": "10th–12th Century",
+                            "category": "Architecture",
+                            "image": "https://images.unsplash.com/photo-1609948543911-cb5c2f4bcb64?auto=format&fit=crop&w=400&q=80",
+                            "description": "The Khajuraho Temples are renowned for their intricate carvings and stunning architecture. Built by the Chandela dynasty, they depict themes of spirituality, love, and daily life. These UNESCO World Heritage sites reflect artistic excellence of medieval India.",
+                            "articleLink": "https://www.google.com/search?q=Khajuraho+Temples+history"
+                        },
+                        {
+                            "id": "sanchi",
+                            "title": "Sanchi Stupa",
+                            "city": "Sanchi",
+                            "coords": [
+                                23.4793,
+                                77.7397
+                            ],
+                            "era": "3rd Century BCE",
+                            "category": "History",
+                            "image": "https://images.unsplash.com/photo-1582550945154-66ea8fff25e1?auto=format&fit=crop&w=400&q=80",
+                            "description": "The Sanchi Stupa is one of the oldest stone structures in India, commissioned by Emperor Ashoka. It stands as a symbol of Buddhist heritage and architectural brilliance. The site features intricate gateways depicting scenes from Buddha’s life.",
+                            "articleLink": "https://www.google.com/search?q=Sanchi+Stupa+history"
+                        }
+                    ]
+                },
+                {
+                    "sectionTitle": "Tribal Culture and Traditions",
+                    "items": [
+                        {
+                            "id": "gond",
+                            "title": "Gond Art",
+                            "city": "Mandla",
+                            "coords": [
+                                22.5980,
+                                80.3710
+                            ],
+                            "era": "Ancient Tribal Tradition",
+                            "category": "Art & Craft",
+                            "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=400&q=80",
+                            "description": "Gond art is a traditional tribal painting style known for its intricate patterns and vibrant colors. Created by the Gond community, it often depicts nature, animals, and folklore. The art form has gained international recognition for its uniqueness.",
+                            "articleLink": "https://www.google.com/search?q=Gond+art+Madhya+Pradesh"
+                        },
+                        {
+                            "id": "bhagoria",
+                            "title": "Bhagoria Festival",
+                            "city": "Jhabua",
+                            "coords": [
+                                22.7695,
+                                74.5900
+                            ],
+                            "era": "Traditional Tribal Festival",
+                            "category": "Festivals",
+                            "image": "https://images.unsplash.com/photo-1587334274328-64186a80f7b5?auto=format&fit=crop&w=400&q=80",
+                            "description": "Bhagoria is a vibrant tribal festival celebrated by the Bhil community, known for its fairs, music, and dance. It is traditionally associated with matchmaking among young people. The festival showcases the lively spirit of tribal culture.",
+                            "articleLink": "https://www.google.com/search?q=Bhagoria+festival+Madhya+Pradesh"
+                        }
+                    ]
+                },
+                {
+                    "sectionTitle": "Cuisine and Language",
+                    "items": [
+                        {
+                            "id": "mpcuisine",
+                            "title": "Madhya Pradesh Cuisine",
+                            "city": "Indore",
+                            "coords": [
+                                22.7196,
+                                75.8577
+                            ],
+                            "era": "Traditional Culinary Heritage",
+                            "category": "Cuisine",
+                            "image": "https://images.unsplash.com/photo-1601050690117-94f5f6fa5b5e?auto=format&fit=crop&w=400&q=80",
+                            "description": "Cuisine in Madhya Pradesh blends flavors from different regions, offering both spicy and sweet dishes. Indore is famous for its street food like poha and jalebi. The food culture reflects the diversity and richness of the state.",
+                            "articleLink": "https://www.google.com/search?q=Madhya+Pradesh+cuisine+poha+jalebi"
+                        },
+                        {
+                            "id": "malwi",
+                            "title": "Malwi Language",
+                            "city": "Ujjain",
+                            "coords": [
+                                23.1765,
+                                75.7885
+                            ],
+                            "era": "Regional Dialect Tradition",
+                            "category": "Linguistics",
+                            "image": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=400&q=80",
+                            "description": "Malwi is a regional dialect spoken in western Madhya Pradesh, particularly in the Malwa region. It carries rich folk traditions, songs, and storytelling practices. The dialect reflects the cultural identity of the local communities.",
+                            "articleLink": "https://www.google.com/search?q=Malwi+language+Madhya+Pradesh"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
