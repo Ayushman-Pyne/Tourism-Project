@@ -22,7 +22,7 @@
                             ],
                             "era": "16th Century",
                             "category": "Architecture",
-                            "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Dadra_and_Nagar_Haveli_and_Daman_and_Diu_damanfort.jpg",
                             "description": "Moti Daman Fort is a massive Portuguese-era fort featuring bastions, churches, and colonial buildings. It reflects the region’s long colonial past. The fort stands as a prominent historical landmark overlooking the Arabian Sea.",
                             "articleLink": "https://www.google.com/search?q=Moti+Daman+Fort"
                         },
@@ -31,12 +31,12 @@
                             "title": "Diu Fort",
                             "city": "Diu",
                             "coords": [
-                                20.7140,
-                                70.9960
+                                20.714,
+                                70.996
                             ],
                             "era": "16th Century",
                             "category": "History",
-                            "image": "https://images.unsplash.com/photo-1599661046827-dacff0c0f3c2?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Dadra_and_Nagar_Haveli_and_Daman_and_Diu_diufort.jpg",
                             "description": "Diu Fort is a coastal fortress built by the Portuguese, known for its strategic location and sea-facing cannons. Surrounded by water, it offers scenic views and historical insights. It represents the maritime importance of the region.",
                             "articleLink": "https://www.google.com/search?q=Diu+Fort+history"
                         }
@@ -55,7 +55,7 @@
                             ],
                             "era": "Modern Tourism",
                             "category": "Nature",
-                            "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Dadra_and_Nagar_Haveli_and_Daman_and_Diu_devka.jpg",
                             "description": "Devka Beach is a popular coastal destination known for its rocky shoreline and scenic sunsets. It attracts visitors for leisure and relaxation. The beach adds to the coastal charm of Daman.",
                             "articleLink": "https://www.google.com/search?q=Devka+Beach+Daman"
                         },
@@ -69,7 +69,7 @@
                             ],
                             "era": "Modern Tourism",
                             "category": "Nature",
-                            "image": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Dadra_and_Nagar_Haveli_and_Daman_and_Diu_dudhni.jpg",
                             "description": "Dudhni Lake, located in Dadra and Nagar Haveli, is known for its calm waters and water sports activities. Surrounded by hills, it offers a peaceful retreat. It is often called the ‘mini Kashmir’ of the region.",
                             "articleLink": "https://www.google.com/search?q=Dudhni+Lake+DNH"
                         }
@@ -84,11 +84,11 @@
                             "city": "Silvassa",
                             "coords": [
                                 20.2763,
-                                72.9700
+                                72.97
                             ],
                             "era": "Ancient Tribal Tradition",
                             "category": "Art & Craft",
-                            "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Dadra_and_Nagar_Haveli_and_Daman_and_Diu_warli.jpg",
                             "description": "Warli art is a traditional tribal painting style characterized by simple geometric figures and depictions of daily life. It reflects a deep connection with nature and community. The art form is widely practiced in the region.",
                             "articleLink": "https://www.google.com/search?q=Warli+art+Dadra+Nagar+Haveli"
                         },
@@ -102,7 +102,7 @@
                             ],
                             "era": "Traditional Fusion",
                             "category": "Cuisine",
-                            "image": "https://images.unsplash.com/photo-1601050690117-94f5f6fa5b5e?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Dadra_and_Nagar_Haveli_and_Daman_and_Diu_coastalcuisine.jpg",
                             "description": "The cuisine of the region blends tribal simplicity with coastal flavors and Portuguese influences. Seafood, coconut, and rice are staples. The food reflects a fusion of indigenous and colonial culinary traditions.",
                             "articleLink": "https://www.google.com/search?q=Daman+Diu+cuisine+seafood"
                         }

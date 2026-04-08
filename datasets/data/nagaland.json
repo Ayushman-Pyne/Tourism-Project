@@ -22,7 +22,7 @@
                             ],
                             "era": "Modern Cultural Festival",
                             "category": "Festivals",
-                            "image": "https://images.unsplash.com/photo-1549880338-65ddcdfd017b?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Nagaland_hornbill.jpg",
                             "description": "The Hornbill Festival is Nagaland’s most famous cultural event, bringing together all major tribes in one grand celebration. It features traditional dances, music, crafts, and food. The festival showcases the rich heritage and unity of the Naga people.",
                             "articleLink": "https://www.google.com/search?q=Hornbill+Festival+Nagaland"
                         },
@@ -31,12 +31,12 @@
                             "title": "Morung Tradition",
                             "city": "Mon",
                             "coords": [
-                                26.7440,
-                                95.0580
+                                26.744,
+                                95.058
                             ],
                             "era": "Ancient Tribal Practice",
                             "category": "Social Culture",
-                            "image": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Nagaland_morung.jpg",
                             "description": "Morungs are traditional communal dormitories where young members of Naga tribes were trained in warfare, culture, and social values. They served as centers of learning and community bonding. The tradition reflects the collective lifestyle of tribal societies.",
                             "articleLink": "https://www.google.com/search?q=Morung+Nagaland+tribal"
                         }
@@ -55,7 +55,7 @@
                             ],
                             "era": "Traditional Craft Heritage",
                             "category": "Craftsmanship",
-                            "image": "https://images.unsplash.com/photo-1594736797933-d0401ba2fe65?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Nagaland_shawl.jpg",
                             "description": "Naga shawls are handwoven textiles that symbolize identity, status, and tribal affiliation. Each design and color carries specific meanings. These shawls are highly valued for their craftsmanship and cultural significance.",
                             "articleLink": "https://www.google.com/search?q=Naga+shawls+meaning"
                         },
@@ -64,12 +64,12 @@
                             "title": "Headhunting Legacy",
                             "city": "Mon",
                             "coords": [
-                                26.7440,
-                                95.0580
+                                26.744,
+                                95.058
                             ],
                             "era": "Pre-Colonial Era",
                             "category": "History",
-                            "image": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Nagaland_headhunting.jpg",
                             "description": "Historically, some Naga tribes practiced headhunting as a symbol of bravery and honor. Though now abandoned, it remains an important part of cultural history. The legacy is preserved through stories, artifacts, and traditions.",
                             "articleLink": "https://www.google.com/search?q=Naga+headhunting+history"
                         }
@@ -88,7 +88,7 @@
                             ],
                             "era": "Traditional Culinary Heritage",
                             "category": "Cuisine",
-                            "image": "https://images.unsplash.com/photo-1601050690117-94f5f6fa5b5e?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Nagaland_nagacuisine.jpg",
                             "description": "Naga cuisine is known for its bold flavors, use of smoked meats, and fermented ingredients. Dishes often include bamboo shoots and chili peppers. The cuisine reflects the rugged terrain and resourcefulness of tribal life.",
                             "articleLink": "https://www.google.com/search?q=Naga+cuisine+food"
                         },
@@ -102,7 +102,7 @@
                             ],
                             "era": "Indigenous Linguistic Diversity",
                             "category": "Linguistics",
-                            "image": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Nagaland_nagalanguage.jpg",
                             "description": "Nagaland is home to numerous tribal languages belonging to the Tibeto-Burman family. Each tribe has its own dialect and linguistic identity. These languages reflect the diversity and cultural richness of the region.",
                             "articleLink": "https://www.google.com/search?q=Naga+languages+Nagaland"
                         }

@@ -5,7 +5,7 @@
             "introduction": "Andhra Pradesh blends ancient dynasties, sacred traditions, and vibrant arts into a culturally rich experience along India’s southeastern coast. From classical dance and temple architecture to spicy cuisine and thriving crafts, the state offers a deep dive into timeless traditions that still shape everyday life.",
             "coords": [
                 15.9129,
-                79.7400
+                79.74
             ],
             "zoom": 6,
             "sections": [
@@ -18,11 +18,11 @@
                             "city": "Kuchipudi",
                             "coords": [
                                 16.1875,
-                                80.6110
+                                80.611
                             ],
                             "era": "17th Century Origins",
                             "category": "Performing Arts",
-                            "image": "https://images.unsplash.com/photo-1604503468506-a8da13d82791?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Andhra_Pradesh_kuchipudi.jpg",
                             "description": "Kuchipudi is one of India’s classical dance forms, originating from a small village of the same name. Known for its graceful movements and expressive storytelling, it blends dance, drama, and music. Traditionally performed by male troupes, it now thrives as a global art form.",
                             "articleLink": "https://www.google.com/search?q=Kuchipudi+dance+Andhra+Pradesh"
                         },
@@ -36,7 +36,7 @@
                             ],
                             "era": "Medieval Craft Tradition",
                             "category": "Craftsmanship",
-                            "image": "https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Andhra_Pradesh_kalamkari.jpg",
                             "description": "Kalamkari is a hand-painted textile art using natural dyes and intricate storytelling motifs. Originating in temple towns like Srikalahasti, it depicts mythological narratives with fine detail. Each piece reflects hours of skilled craftsmanship and cultural storytelling.",
                             "articleLink": "https://www.google.com/search?q=Kalamkari+art+Srikalahasti"
                         }
@@ -55,7 +55,7 @@
                             ],
                             "era": "Ancient to Modern",
                             "category": "Religious Heritage",
-                            "image": "https://images.unsplash.com/photo-1624948465027-6f9d1c2f7c73?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Andhra_Pradesh_tirupati.jpg",
                             "description": "The Tirumala Venkateswara Temple in Tirupati is one of the richest and most visited pilgrimage sites in the world. Dedicated to Lord Vishnu, it attracts millions of devotees annually. Its rituals and traditions have been preserved for centuries.",
                             "articleLink": "https://www.google.com/search?q=Tirupati+Balaji+Temple"
                         },
@@ -65,11 +65,11 @@
                             "city": "Amaravati",
                             "coords": [
                                 16.5417,
-                                80.5150
+                                80.515
                             ],
                             "era": "3rd Century BCE",
                             "category": "History",
-                            "image": "https://images.unsplash.com/photo-1582550945154-66ea8fff25e1?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Andhra_Pradesh_amaravati.jpg",
                             "description": "The Amaravati Stupa stands as a testament to Andhra’s ancient Buddhist heritage. Once a major center of learning and art, it features intricate carvings depicting the life of Buddha. Its remains continue to attract historians and travelers alike.",
                             "articleLink": "https://www.google.com/search?q=Amaravati+Stupa+history"
                         }
@@ -84,11 +84,11 @@
                             "city": "Vijayawada",
                             "coords": [
                                 16.5062,
-                                80.6480
+                                80.648
                             ],
                             "era": "Traditional Culinary Heritage",
                             "category": "Cuisine",
-                            "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Andhra_Pradesh_andhracuisine.jpg",
                             "description": "Andhra cuisine is famous for its bold flavors, rich spices, and fiery heat. Staples like rice, pickles, and curries dominate meals, often accompanied by tangy chutneys. The cuisine reflects agricultural abundance and regional diversity.",
                             "articleLink": "https://www.google.com/search?q=Andhra+Pradesh+cuisine+spicy+food"
                         },
@@ -102,7 +102,7 @@
                             ],
                             "era": "Ancient Literary Tradition",
                             "category": "Linguistics",
-                            "image": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Telangana_telugu.jpg",
                             "description": "Telugu, one of India’s classical languages, boasts a rich literary history spanning centuries. Known for its melodic quality, it is widely spoken across Andhra Pradesh. Its scripts and poetry reflect deep cultural and historical roots.",
                             "articleLink": "https://www.google.com/search?q=Telugu+language+history"
                         }

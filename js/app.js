@@ -49,12 +49,20 @@ function initGeoJSON(data) {
             let rawName = feature.properties.NAME_1 || feature.properties.st_nm || feature.properties.ST_NM || feature.properties.state_name || "Unknown State";
             const featureStateName = rawName.split(' ').map(w => w.charAt(0).toUpperCase() + w.slice(1).toLowerCase()).join(' ');
             
+            // Per-state label position overrides
+            const tooltipOffset = featureStateName === 'West Bengal'  ? [0, 20] :
+                                  featureStateName === 'Chandigarh'   ? [0, 10] :
+                                  featureStateName === 'Uttarakhand'  ? [0,  5] :
+                                  featureStateName === 'Assam'        ? [0, -5] :
+                                  [0, 0];
+
             // Add permanent subtle label to the map geographic center of this state
             layer.bindTooltip(featureStateName, {
                 permanent: true,
                 direction: "center",
                 className: "state-label",
-                interactive: true
+                interactive: true,
+                offset: tooltipOffset
             });
             
             layer.on('click', function() {
@@ -174,7 +182,7 @@ function activateState(stateName) {
     const data = statesData[stateName] || statesData[Object.keys(statesData).find(key => key.toLowerCase() === stateName.toLowerCase())];
     
     if (data) {
-        flyToOffset(data.coords, data.zoom || 6, 1.5);
+        flyToOffset(data.coords, data.zoom || 7, 1.5);
         
         // 3. Render HTML Accordions
         renderSidebar(stateName, data);
@@ -243,6 +251,10 @@ function renderSidebar(stateName, stateData) {
             ${sectionsHtml}
         </div>
     `;
+
+    // Always return to top when switching states
+    const sidebar = document.getElementById('sidebar');
+    if (sidebar) sidebar.scrollTop = 0;
 
     // Bind reverse-events: Sidebar Accordion -> Map Marker
     stateData.sections.forEach(section => {
@@ -400,4 +412,48 @@ Promise.all(dataFiles.map(file => {
             <p>Could not load state datasets. Since browsers block local file loading, please ensure this site is running on a local development server (like VS Code Live Server).</p>
         </div>
     `;
+});
+
+// ── Reset to India Overview ────────────────────────────────────────────────────
+function resetToIndia() {
+    // Fly back to default India center with sidebar offset
+    const targetPoint = map.project([21.0, 78.0], 5);
+    if (window.innerWidth > 768) {
+        targetPoint.x += 225;
+    } else {
+        targetPoint.y += (window.innerHeight * 0.45) / 2;
+    }
+    map.flyTo(map.unproject(targetPoint, 5), 5, { animate: true, duration: 1.2 });
+
+    // Reset all state border styles
+    if (geojsonLayer) {
+        geojsonLayer.eachLayer(layer => {
+            layer.setStyle({ weight: 1.5, opacity: 0.15, fillColor: '#d4af37', fillOpacity: 0.0 });
+        });
+    }
+
+    // Hide all markers
+    toggleMarkers(null);
+
+    // Close any open accordions
+    document.querySelectorAll('details.exhibit-item').forEach(d => d.open = false);
+    isReading = false;
+
+    // Reset sidebar to welcome state
+    displayArea.innerHTML = `
+        <div class="museum-placeholder fade-in" style="margin: auto 0; text-align: center;">
+            <i class="fas fa-map-marked-alt fa-3x" style="color: #d4af37; margin-bottom: 15px; opacity: 0.6;"></i>
+            <h2>Explore India</h2>
+            <p>Click on any state to discover its cultural heritage, history, and traditions.</p>
+        </div>
+    `;
+
+    resetTimer();
+}
+
+// ── ESC Key → Reset to India ───────────────────────────────────────────────────
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+        resetToIndia();
+    }
 });

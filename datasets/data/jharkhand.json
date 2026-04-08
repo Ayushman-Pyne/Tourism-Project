@@ -22,7 +22,7 @@
                             ],
                             "era": "Ancient Indigenous Heritage",
                             "category": "Tribal Culture",
-                            "image": "https://images.unsplash.com/photo-1604480132736-44c188fe4d20?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Jharkhand_santhal.jpg",
                             "description": "The Santhal tribe is one of the largest tribal communities in Jharkhand, known for its rich cultural traditions, music, and dance. Their festivals and rituals reflect a close relationship with nature. Oral traditions and community life remain central to their identity.",
                             "articleLink": "https://www.google.com/search?q=Santhal+tribe+Jharkhand"
                         },
@@ -36,7 +36,7 @@
                             ],
                             "era": "Ancient Nature Festival",
                             "category": "Festivals",
-                            "image": "https://images.unsplash.com/photo-1587334274328-64186a80f7b5?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Jharkhand_sarhul.jpg",
                             "description": "Sarhul is a major tribal festival celebrating the worship of nature and the arrival of spring. Communities gather to honor the Sal tree and perform traditional dances. It symbolizes harmony between humans and the environment.",
                             "articleLink": "https://www.google.com/search?q=Sarhul+festival+Jharkhand"
                         }
@@ -51,11 +51,11 @@
                             "city": "Ranchi",
                             "coords": [
                                 23.2875,
-                                85.5790
+                                85.579
                             ],
                             "era": "Natural Heritage",
                             "category": "Nature",
-                            "image": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Jharkhand_hundru.jpg",
                             "description": "Hundru Falls is one of the highest waterfalls in Jharkhand, surrounded by dense forests and rocky terrain. It is a popular tourist destination known for its scenic beauty. The falls highlight the state’s rich natural landscape.",
                             "articleLink": "https://www.google.com/search?q=Hundru+Falls+Jharkhand"
                         },
@@ -69,7 +69,7 @@
                             ],
                             "era": "Colonial Era Discovery",
                             "category": "Nature",
-                            "image": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Jharkhand_netarhat.jpg",
                             "description": "Netarhat, known as the 'Queen of Chotanagpur', is famous for its stunning sunrise and sunset views. The plateau offers cool climate and scenic landscapes. It remains a peaceful retreat showcasing Jharkhand’s natural charm.",
                             "articleLink": "https://www.google.com/search?q=Netarhat+Jharkhand+plateau"
                         }
@@ -88,7 +88,7 @@
                             ],
                             "era": "Folk Linguistic Tradition",
                             "category": "Linguistics",
-                            "image": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Jharkhand_nagpuri.jpg",
                             "description": "Nagpuri is a regional language widely spoken in Jharkhand, reflecting the cultural blend of tribal and non-tribal communities. It has a rich tradition of folk songs and oral storytelling. The language plays a key role in preserving local identity.",
                             "articleLink": "https://www.google.com/search?q=Nagpuri+language+Jharkhand"
                         },
@@ -97,12 +97,12 @@
                             "title": "Ho Language",
                             "city": "Chaibasa",
                             "coords": [
-                                22.5500,
-                                85.8000
+                                22.55,
+                                85.8
                             ],
                             "era": "Indigenous Heritage",
                             "category": "Linguistics",
-                            "image": "https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Jharkhand_ho.jpg",
                             "description": "The Ho language is spoken by the Ho tribe in Jharkhand and belongs to the Austroasiatic language family. It is an important part of tribal identity and culture. Efforts are being made to preserve and promote its use among younger generations.",
                             "articleLink": "https://www.google.com/search?q=Ho+language+Jharkhand"
                         }

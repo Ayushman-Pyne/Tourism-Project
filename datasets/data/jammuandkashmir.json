@@ -22,7 +22,7 @@
                             ],
                             "era": "Ancient Pilgrimage",
                             "category": "Religious Heritage",
-                            "image": "https://images.unsplash.com/photo-1624948465027-6f9d1c7c73?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Jammu_and_Kashmir_vaishno.jpg",
                             "description": "The Vaishno Devi shrine is one of India’s most sacred pilgrimage sites, located in the Trikuta Mountains. Devotees undertake a spiritual trek to seek blessings from the goddess. The journey reflects devotion and faith.",
                             "articleLink": "https://www.google.com/search?q=Vaishno+Devi+Temple"
                         },
@@ -36,7 +36,7 @@
                             ],
                             "era": "Ancient Era",
                             "category": "Religious Heritage",
-                            "image": "https://images.unsplash.com/photo-1593697820988-37e6d7a3a065?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Jammu_and_Kashmir_shankaracharya.jpg",
                             "description": "Perched atop a hill, the Shankaracharya Temple offers panoramic views of Srinagar and Dal Lake. It is dedicated to Lord Shiva and holds great historical significance. The site is a major spiritual landmark in the region.",
                             "articleLink": "https://www.google.com/search?q=Shankaracharya+Temple+Srinagar"
                         }
@@ -55,7 +55,7 @@
                             ],
                             "era": "Centuries-old Craft",
                             "category": "Craftsmanship",
-                            "image": "https://images.unsplash.com/photo-1594736797933-d0401ba2fe65?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Jammu_and_Kashmir_pashmina.jpg",
                             "description": "Pashmina shawls are world-famous for their softness and intricate hand-weaving. Crafted from fine Himalayan wool, they take months to produce. This craft represents Kashmir’s rich artistic heritage.",
                             "articleLink": "https://www.google.com/search?q=Pashmina+shawls+Kashmir"
                         },
@@ -69,7 +69,7 @@
                             ],
                             "era": "Traditional Lifestyle",
                             "category": "Culture",
-                            "image": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Jammu_and_Kashmir_dal.jpg",
                             "description": "Dal Lake is famous for its houseboats, shikara rides, and floating markets. It represents a unique way of life centered around water. The lake is a cultural and economic hub of Srinagar.",
                             "articleLink": "https://www.google.com/search?q=Dal+Lake+Srinagar"
                         }
@@ -88,7 +88,7 @@
                             ],
                             "era": "Traditional Culinary Heritage",
                             "category": "Cuisine",
-                            "image": "https://images.unsplash.com/photo-1601050690117-94f5f6fa5b5e?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Jammu_and_Kashmir_wazwan.jpg",
                             "description": "Wazwan is a traditional multi-course feast known for its rich flavors and elaborate preparation. Dishes like rogan josh and gushtaba are highlights. It reflects Kashmiri hospitality and culinary artistry.",
                             "articleLink": "https://www.google.com/search?q=Kashmiri+Wazwan+food"
                         },
@@ -102,7 +102,7 @@
                             ],
                             "era": "Ancient Linguistic Tradition",
                             "category": "Linguistics",
-                            "image": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Jammu_and_Kashmir_kashmiri.jpg",
                             "description": "Kashmiri is a major regional language with a rich literary and poetic tradition. It belongs to the Dardic group of Indo-Aryan languages. The language reflects the cultural identity of the people.",
                             "articleLink": "https://www.google.com/search?q=Kashmiri+language+history"
                         }

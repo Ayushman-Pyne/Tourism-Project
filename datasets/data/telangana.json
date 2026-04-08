@@ -22,7 +22,7 @@
                             ],
                             "era": "16th Century",
                             "category": "Architecture",
-                            "image": "https://images.unsplash.com/photo-1593697821252-0c9137d9fc45?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Telangana_charminar.jpg",
                             "description": "Charminar is an iconic monument in Hyderabad built by the Qutb Shahi dynasty. Known for its four grand arches and minarets, it stands at the heart of the old city. It symbolizes Telangana’s historical and cultural heritage.",
                             "articleLink": "https://www.google.com/search?q=Charminar+Hyderabad"
                         },
@@ -36,7 +36,7 @@
                             ],
                             "era": "Medieval Era",
                             "category": "History",
-                            "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Telangana_golconda.jpg",
                             "description": "Golconda Fort is a massive fortress known for its advanced acoustics and strategic design. It was once the center of a thriving diamond trade. The fort reflects the power and engineering brilliance of the Deccan rulers.",
                             "articleLink": "https://www.google.com/search?q=Golconda+Fort+history"
                         }
@@ -55,7 +55,7 @@
                             ],
                             "era": "Traditional Floral Festival",
                             "category": "Festivals",
-                            "image": "https://images.unsplash.com/photo-1587334274328-64186a80f7b5?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Telangana_bathukamma.jpg",
                             "description": "Bathukamma is a vibrant floral festival celebrated by women in Telangana. Stacks of seasonal flowers are arranged beautifully and worshipped. The festival symbolizes nature, femininity, and cultural identity.",
                             "articleLink": "https://www.google.com/search?q=Bathukamma+festival+Telangana"
                         },
@@ -69,7 +69,7 @@
                             ],
                             "era": "Kakatiya Period",
                             "category": "Performing Arts",
-                            "image": "https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Telangana_perini.jpg",
                             "description": "Perini Shiva Tandavam is an ancient warrior dance form performed in devotion to Lord Shiva. Revived in modern times, it was originally performed by soldiers before battle. The dance reflects strength, rhythm, and spiritual intensity.",
                             "articleLink": "https://www.google.com/search?q=Perini+Shiva+Tandavam"
                         }
@@ -83,12 +83,12 @@
                             "title": "Telangana Cuisine",
                             "city": "Hyderabad",
                             "coords": [
-                                17.3850,
+                                17.385,
                                 78.4867
                             ],
                             "era": "Deccan Culinary Tradition",
                             "category": "Cuisine",
-                            "image": "https://images.unsplash.com/photo-1601050690117-94f5f6fa5b5e?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Telangana_telanganacuisine.jpg",
                             "description": "Telangana cuisine is known for its bold flavors, spices, and use of millets and meats. Dishes like Hyderabadi biryani and spicy curries are widely popular. The cuisine reflects the fusion of local and Mughal influences.",
                             "articleLink": "https://www.google.com/search?q=Telangana+cuisine+Hyderabadi+biryani"
                         },
@@ -97,12 +97,12 @@
                             "title": "Telugu Language",
                             "city": "Hyderabad",
                             "coords": [
-                                17.3850,
+                                17.385,
                                 78.4867
                             ],
                             "era": "Ancient Literary Tradition",
                             "category": "Linguistics",
-                            "image": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Telangana_telugu.jpg",
                             "description": "Telugu is one of the classical languages of India and is widely spoken in Telangana. Known for its melodic nature, it has a rich literary and cultural heritage. The language is central to the region’s identity.",
                             "articleLink": "https://www.google.com/search?q=Telugu+language+history"
                         }

@@ -17,12 +17,12 @@
                             "title": "Bodh Gaya",
                             "city": "Bodh Gaya",
                             "coords": [
-                                24.6950,
-                                84.9910
+                                24.695,
+                                84.991
                             ],
                             "era": "6th Century BCE",
                             "category": "Religious Heritage",
-                            "image": "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Bihar_bodhgaya.jpg",
                             "description": "Bodh Gaya is one of the most sacred Buddhist sites in the world, where Gautama Buddha attained enlightenment under the Bodhi Tree. The Mahabodhi Temple complex stands as a UNESCO World Heritage site. It continues to attract pilgrims and seekers from across the globe.",
                             "articleLink": "https://www.google.com/search?q=Bodh+Gaya+Mahabodhi+Temple"
                         },
@@ -36,7 +36,7 @@
                             ],
                             "era": "5th Century CE",
                             "category": "Education & History",
-                            "image": "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Bihar_nalanda.jpg",
                             "description": "Nalanda was one of the world’s first residential universities, attracting scholars from across Asia. Known for its vast libraries and advanced curriculum, it was a center of Buddhist learning. Its ruins still echo the legacy of ancient academic excellence.",
                             "articleLink": "https://www.google.com/search?q=Nalanda+University+ancient+history"
                         }
@@ -51,11 +51,11 @@
                             "city": "Madhubani",
                             "coords": [
                                 26.3537,
-                                86.0710
+                                86.071
                             ],
                             "era": "Ancient Folk Tradition",
                             "category": "Art & Craft",
-                            "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Bihar_madhubani.jpg",
                             "description": "Madhubani painting is a vibrant folk art form practiced primarily by women in rural Bihar. Known for its intricate patterns and natural dyes, it depicts mythological themes and daily life. This tradition has gained global recognition for its distinct style.",
                             "articleLink": "https://www.google.com/search?q=Madhubani+painting+Bihar"
                         },
@@ -69,7 +69,7 @@
                             ],
                             "era": "Ancient Vedic Tradition",
                             "category": "Festivals",
-                            "image": "https://images.unsplash.com/photo-1603398938378-0e1f3f0f3a1a?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Bihar_chhath.jpg",
                             "description": "Chhath Puja is a unique festival dedicated to the Sun God, celebrated with deep devotion in Bihar. Devotees perform rituals on riverbanks during sunrise and sunset. Its disciplined practices and community participation make it one of the most significant regional festivals.",
                             "articleLink": "https://www.google.com/search?q=Chhath+Puja+Bihar"
                         }
@@ -88,7 +88,7 @@
                             ],
                             "era": "Medieval Literary Tradition",
                             "category": "Linguistics",
-                            "image": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Bihar_maithili.jpg",
                             "description": "Maithili is a classical language of Bihar with a rich literary heritage and distinct script traditions. It is widely spoken in the Mithila region and recognized in the Indian Constitution. Its poetry and folklore reflect deep cultural roots.",
                             "articleLink": "https://www.google.com/search?q=Maithili+language+history"
                         },
@@ -97,12 +97,12 @@
                             "title": "Bhojpuri Language",
                             "city": "Ara",
                             "coords": [
-                                25.5560,
+                                25.556,
                                 84.6603
                             ],
                             "era": "Folk Tradition",
                             "category": "Linguistics",
-                            "image": "https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Bihar_bhojpuri.jpg",
                             "description": "Bhojpuri is a widely spoken language in Bihar known for its vibrant oral traditions and folk music. It has a strong cultural presence both in India and among diaspora communities. Its songs and storytelling preserve regional identity and heritage.",
                             "articleLink": "https://www.google.com/search?q=Bhojpuri+language+culture"
                         }

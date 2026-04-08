@@ -17,12 +17,12 @@
                             "title": "Capitol Complex",
                             "city": "Chandigarh",
                             "coords": [
-                                30.7580,
-                                76.8070
+                                30.758,
+                                76.807
                             ],
                             "era": "20th Century Modernism",
                             "category": "Architecture",
-                            "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Chandigarh_capitol.jpg",
                             "description": "The Capitol Complex, designed by Le Corbusier, is a UNESCO World Heritage site representing modernist urban planning. It includes iconic structures like the High Court and Assembly. The complex reflects Chandigarh’s identity as a planned city.",
                             "articleLink": "https://www.google.com/search?q=Capitol+Complex+Chandigarh"
                         },
@@ -31,12 +31,12 @@
                             "title": "Rock Garden",
                             "city": "Chandigarh",
                             "coords": [
-                                30.7520,
-                                76.8100
+                                30.752,
+                                76.81
                             ],
                             "era": "20th Century",
                             "category": "Art & Culture",
-                            "image": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Chandigarh_rockgarden.jpg",
                             "description": "The Rock Garden is a unique sculpture park created entirely from industrial and urban waste. Built by Nek Chand, it features thousands of artistic figures and installations. It showcases creativity and sustainable art practices.",
                             "articleLink": "https://www.google.com/search?q=Rock+Garden+Chandigarh"
                         }
@@ -55,7 +55,7 @@
                             ],
                             "era": "Modern Era",
                             "category": "Nature",
-                            "image": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Chandigarh_sukhna.jpg",
                             "description": "Sukhna Lake is a man-made reservoir and a popular recreational spot in Chandigarh. It offers boating, walking paths, and scenic views. The lake is a central part of the city’s relaxed and green lifestyle.",
                             "articleLink": "https://www.google.com/search?q=Sukhna+Lake+Chandigarh"
                         },
@@ -64,12 +64,12 @@
                             "title": "Zakir Hussain Rose Garden",
                             "city": "Chandigarh",
                             "coords": [
-                                30.7470,
-                                76.7850
+                                30.747,
+                                76.785
                             ],
                             "era": "Modern Era",
                             "category": "Nature",
-                            "image": "https://images.unsplash.com/photo-1520637836862-4d197d17c91a?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Chandigarh_rose.jpg",
                             "description": "The Zakir Hussain Rose Garden is Asia’s largest rose garden, featuring thousands of varieties of roses and medicinal plants. It hosts the annual Rose Festival, attracting visitors from across the country. The garden enhances Chandigarh’s green charm.",
                             "articleLink": "https://www.google.com/search?q=Rose+Garden+Chandigarh"
                         }
@@ -88,7 +88,7 @@
                             ],
                             "era": "Contemporary Urban Culture",
                             "category": "Cuisine",
-                            "image": "https://images.unsplash.com/photo-1601050690117-94f5f6fa5b5e?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Chandigarh_cuisine.jpg",
                             "description": "Chandigarh’s cuisine reflects a blend of Punjabi and Haryanvi flavors, known for rich, hearty dishes. From butter chicken to parathas, food culture is vibrant and diverse. The city’s urban setting also brings global culinary influences.",
                             "articleLink": "https://www.google.com/search?q=Chandigarh+cuisine+Punjabi+food"
                         },
@@ -102,7 +102,7 @@
                             ],
                             "era": "Modern Linguistic Blend",
                             "category": "Linguistics",
-                            "image": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Puducherry_languages.jpg",
                             "description": "Punjabi and Hindi are widely spoken in Chandigarh, reflecting its shared identity with Punjab and Haryana. The city’s cosmopolitan nature also includes English as a common medium. This linguistic diversity defines its modern culture.",
                             "articleLink": "https://www.google.com/search?q=Languages+spoken+in+Chandigarh"
                         }

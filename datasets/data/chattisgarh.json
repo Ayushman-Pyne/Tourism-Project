@@ -22,7 +22,7 @@
                             ],
                             "era": "Centuries-old Tradition",
                             "category": "Festivals",
-                            "image": "https://images.unsplash.com/photo-1587334274328-64186a80f7b5?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Chhattisgarh_bastar.jpg",
                             "description": "Bastar Dussehra is one of the longest festivals in the world, celebrated uniquely without the typical Ramayana theme. It honors the local deity Danteshwari and involves tribal rituals and processions. The festival reflects the deep-rooted traditions of Bastar.",
                             "articleLink": "https://www.google.com/search?q=Bastar+Dussehra+festival"
                         },
@@ -31,12 +31,12 @@
                             "title": "Bell Metal Craft",
                             "city": "Kondagaon",
                             "coords": [
-                                19.6000,
+                                19.6,
                                 81.6667
                             ],
                             "era": "Ancient Craft Tradition",
                             "category": "Craftsmanship",
-                            "image": "https://images.unsplash.com/photo-1594736797933-d0401ba2fe65?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Chhattisgarh_bellmetal.jpg",
                             "description": "Bell metal craft, also known as Dhokra art, is a traditional metal casting technique practiced by tribal artisans. Using the lost-wax method, craftsmen create intricate figurines and ornaments. The craft reflects ancient artistic skills passed down generations.",
                             "articleLink": "https://www.google.com/search?q=Dhokra+art+Chhattisgarh"
                         }
@@ -55,7 +55,7 @@
                             ],
                             "era": "Natural Heritage",
                             "category": "Nature",
-                            "image": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Chhattisgarh_chitrakote.jpg",
                             "description": "Chitrakote Falls, often called the ‘Niagara of India’, is the widest waterfall in the country. Located on the Indravati River, it offers a spectacular view especially during monsoon. The falls highlight the natural beauty of Chhattisgarh.",
                             "articleLink": "https://www.google.com/search?q=Chitrakote+Falls+Chhattisgarh"
                         },
@@ -64,12 +64,12 @@
                             "title": "Sirpur Heritage Site",
                             "city": "Sirpur",
                             "coords": [
-                                21.3500,
+                                21.35,
                                 82.1833
                             ],
                             "era": "6th–8th Century",
                             "category": "History",
-                            "image": "https://images.unsplash.com/photo-1582550945154-66ea8fff25e1?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Chhattisgarh_sirpur.jpg",
                             "description": "Sirpur is an ancient town known for its archaeological remains, including temples, monasteries, and stupas. It was once a major center of Buddhist and Hindu culture. The site reflects the historical richness of early Indian civilization.",
                             "articleLink": "https://www.google.com/search?q=Sirpur+Chhattisgarh+archaeology"
                         }
@@ -88,7 +88,7 @@
                             ],
                             "era": "Traditional Rural Cuisine",
                             "category": "Cuisine",
-                            "image": "https://images.unsplash.com/photo-1601050690117-94f5f6fa5b5e?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Chhattisgarh_cgfood.jpg",
                             "description": "Chhattisgarhi cuisine is simple and nutritious, based on rice, lentils, and locally grown vegetables. Dishes like chila and fara are popular staples. The food reflects the agricultural lifestyle of the region.",
                             "articleLink": "https://www.google.com/search?q=Chhattisgarhi+cuisine+fara+chila"
                         },
@@ -102,7 +102,7 @@
                             ],
                             "era": "Regional Dialect Tradition",
                             "category": "Linguistics",
-                            "image": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Chhattisgarh_chhattisgarhi.jpg",
                             "description": "Chhattisgarhi is a regional language widely spoken across the state, with a rich tradition of folk songs and oral storytelling. It reflects the cultural identity of local communities. Efforts are ongoing to promote and preserve the language.",
                             "articleLink": "https://www.google.com/search?q=Chhattisgarhi+language"
                         }

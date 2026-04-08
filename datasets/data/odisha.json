@@ -22,7 +22,7 @@
                             ],
                             "era": "12th Century",
                             "category": "Religious Heritage",
-                            "image": "https://images.unsplash.com/photo-1624948465027-6f9d1c2f7c73?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Odisha_jagannath.jpg",
                             "description": "The Jagannath Temple in Puri is one of the most sacred pilgrimage sites in India, dedicated to Lord Jagannath. It is famous for the annual Rath Yatra festival, where massive chariots carry the deities. The temple is central to Odisha’s spiritual identity.",
                             "articleLink": "https://www.google.com/search?q=Jagannath+Temple+Puri"
                         },
@@ -36,7 +36,7 @@
                             ],
                             "era": "13th Century",
                             "category": "Architecture",
-                            "image": "https://images.unsplash.com/photo-1609948543911-cb5c2f4bcb64?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Odisha_konark.jpg",
                             "description": "The Konark Sun Temple is an architectural marvel designed as a massive chariot dedicated to the Sun God. Known for its intricate carvings and symbolic design, it is a UNESCO World Heritage site. It reflects the artistic excellence of ancient Odisha.",
                             "articleLink": "https://www.google.com/search?q=Konark+Sun+Temple+history"
                         }
@@ -55,7 +55,7 @@
                             ],
                             "era": "Ancient Classical Tradition",
                             "category": "Performing Arts",
-                            "image": "https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Odisha_odissi.jpg",
                             "description": "Odissi is one of India’s oldest classical dance forms, known for its graceful movements and sculpturesque poses. Originating from temple rituals, it tells stories from mythology and devotion. The dance is a symbol of Odisha’s artistic heritage.",
                             "articleLink": "https://www.google.com/search?q=Odissi+dance+Odisha"
                         },
@@ -64,12 +64,12 @@
                             "title": "Pattachitra Art",
                             "city": "Raghurajpur",
                             "coords": [
-                                19.8800,
-                                85.8200
+                                19.88,
+                                85.82
                             ],
                             "era": "Ancient Craft Tradition",
                             "category": "Art & Craft",
-                            "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Odisha_pattachitra.jpg",
                             "description": "Pattachitra is a traditional painting style known for its intricate details and mythological themes. Created on cloth using natural colors, it reflects religious stories and cultural motifs. The art form is preserved in artisan villages like Raghurajpur.",
                             "articleLink": "https://www.google.com/search?q=Pattachitra+art+Odisha"
                         }
@@ -88,7 +88,7 @@
                             ],
                             "era": "Traditional Culinary Heritage",
                             "category": "Cuisine",
-                            "image": "https://images.unsplash.com/photo-1601050690117-94f5f6fa5b5e?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Odisha_odishacuisine.jpg",
                             "description": "Odia cuisine is known for its simple yet flavorful dishes, often prepared with rice, lentils, and vegetables. Temple food like Mahaprasad is an important part of the culinary tradition. The cuisine reflects both spirituality and regional diversity.",
                             "articleLink": "https://www.google.com/search?q=Odia+cuisine+Mahaprasad"
                         },
@@ -102,7 +102,7 @@
                             ],
                             "era": "Ancient Literary Tradition",
                             "category": "Linguistics",
-                            "image": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Odisha_odia.jpg",
                             "description": "Odia is one of India’s classical languages with a long literary history. It has a distinct script and rich tradition of poetry and prose. The language plays a central role in shaping Odisha’s cultural identity.",
                             "articleLink": "https://www.google.com/search?q=Odia+language+history"
                         }

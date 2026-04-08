@@ -17,12 +17,12 @@
                             "title": "Golden Temple",
                             "city": "Amritsar",
                             "coords": [
-                                31.6200,
+                                31.62,
                                 74.8765
                             ],
                             "era": "16th Century",
                             "category": "Religious Heritage",
-                            "image": "https://images.unsplash.com/photo-1605379399642-870262d3d051?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Punjab_goldentemple.jpg",
                             "description": "The Golden Temple, or Harmandir Sahib, is the holiest shrine of Sikhism located in Amritsar. Known for its stunning golden architecture and serene sarovar, it welcomes people of all faiths. The langar tradition reflects equality and community service.",
                             "articleLink": "https://www.google.com/search?q=Golden+Temple+Amritsar"
                         },
@@ -36,7 +36,7 @@
                             ],
                             "era": "1919 Historical Event",
                             "category": "History",
-                            "image": "https://images.unsplash.com/photo-1593697821252-0c9137d9fc45?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Punjab_jallianwala.jpg",
                             "description": "Jallianwala Bagh is a historic site commemorating the tragic massacre of 1919 during British rule. It stands as a symbol of sacrifice and the struggle for India’s independence. The memorial continues to evoke deep national remembrance.",
                             "articleLink": "https://www.google.com/search?q=Jallianwala+Bagh+history"
                         }
@@ -50,12 +50,12 @@
                             "title": "Baisakhi Festival",
                             "city": "Ludhiana",
                             "coords": [
-                                30.9010,
+                                30.901,
                                 75.8573
                             ],
                             "era": "Harvest Tradition",
                             "category": "Festivals",
-                            "image": "https://images.unsplash.com/photo-1587334274328-64186a80f7b5?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Punjab_baisakhi.jpg",
                             "description": "Baisakhi marks the harvest season and the Sikh New Year, celebrated with great enthusiasm in Punjab. It also commemorates the formation of the Khalsa. The festival includes vibrant fairs, music, and traditional dances.",
                             "articleLink": "https://www.google.com/search?q=Baisakhi+festival+Punjab"
                         },
@@ -64,12 +64,12 @@
                             "title": "Bhangra Dance",
                             "city": "Jalandhar",
                             "coords": [
-                                31.3260,
+                                31.326,
                                 75.5762
                             ],
                             "era": "Traditional Folk Era",
                             "category": "Performing Arts",
-                            "image": "https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Punjab_bhangra.jpg",
                             "description": "Bhangra is an energetic folk dance of Punjab originally associated with harvest celebrations. It features lively music, rhythmic beats, and vibrant costumes. Today, it is popular worldwide as a symbol of Punjabi culture.",
                             "articleLink": "https://www.google.com/search?q=Bhangra+dance+Punjab"
                         }
@@ -88,7 +88,7 @@
                             ],
                             "era": "Traditional Culinary Heritage",
                             "category": "Cuisine",
-                            "image": "https://images.unsplash.com/photo-1601050690117-94f5f6fa5b5e?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Punjab_punjabcuisine.jpg",
                             "description": "Punjabi cuisine is known for its rich, hearty flavors and generous use of butter and spices. Dishes like butter chicken, sarson da saag, and makki di roti are iconic. The cuisine reflects the agricultural prosperity of the region.",
                             "articleLink": "https://www.google.com/search?q=Punjabi+cuisine+butter+chicken"
                         },
@@ -102,7 +102,7 @@
                             ],
                             "era": "Medieval Origins",
                             "category": "Linguistics",
-                            "image": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Punjab_punjabi.jpg",
                             "description": "Punjabi is the primary language of the state, written in the Gurmukhi script. It has a rich tradition of poetry, music, and literature. The language plays a vital role in preserving Punjab’s cultural identity.",
                             "articleLink": "https://www.google.com/search?q=Punjabi+language+history"
                         }

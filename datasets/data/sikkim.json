@@ -4,7 +4,7 @@
             "heading": "The Himalayan Harmony of Sikkim",
             "introduction": "Sikkim, nestled in the eastern Himalayas, is a serene blend of Buddhist traditions, breathtaking landscapes, and vibrant cultural diversity. With its monasteries, festivals, and eco-conscious lifestyle, the state offers a peaceful yet culturally rich mountain experience.",
             "coords": [
-                27.5330,
+                27.533,
                 88.5122
             ],
             "zoom": 7,
@@ -17,12 +17,12 @@
                             "title": "Rumtek Monastery",
                             "city": "Gangtok",
                             "coords": [
-                                27.3000,
-                                88.6000
+                                27.3,
+                                88.6
                             ],
                             "era": "16th Century Origins",
                             "category": "Religious Heritage",
-                            "image": "https://images.unsplash.com/photo-1589883661923-6476cb0ae9f2?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Sikkim_rumtek.jpg",
                             "description": "Rumtek Monastery is one of the most important Buddhist centers in Sikkim, belonging to the Karma Kagyu lineage. It features traditional Tibetan architecture and sacred relics. The monastery serves as a hub for spiritual learning and practice.",
                             "articleLink": "https://www.google.com/search?q=Rumtek+Monastery+Sikkim"
                         },
@@ -31,12 +31,12 @@
                             "title": "Pemayangtse Monastery",
                             "city": "Pelling",
                             "coords": [
-                                27.3000,
-                                88.2000
+                                27.3,
+                                88.2
                             ],
                             "era": "17th Century",
                             "category": "Religious Heritage",
-                            "image": "https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Sikkim_pemayangtse.jpg",
                             "description": "Pemayangtse Monastery is one of Sikkim’s oldest and most revered monasteries. It offers panoramic views of the Himalayas and houses intricate wooden sculptures. The monastery reflects the deep-rooted Buddhist traditions of the region.",
                             "articleLink": "https://www.google.com/search?q=Pemayangtse+Monastery+Sikkim"
                         }
@@ -55,7 +55,7 @@
                             ],
                             "era": "Traditional Tibetan New Year",
                             "category": "Festivals",
-                            "image": "https://images.unsplash.com/photo-1587334274328-64186a80f7b5?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Sikkim_losar.jpg",
                             "description": "Losar is the Tibetan New Year celebrated with prayers, dances, and festive gatherings in Sikkim. Monasteries come alive with rituals and performances. The festival symbolizes renewal, prosperity, and cultural unity.",
                             "articleLink": "https://www.google.com/search?q=Losar+festival+Sikkim"
                         },
@@ -69,7 +69,7 @@
                             ],
                             "era": "Ancient Ritual Tradition",
                             "category": "Performing Arts",
-                            "image": "https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Sikkim_maskdance.jpg",
                             "description": "Cham is a sacred masked dance performed by monks during religious festivals. It depicts the victory of good over evil through symbolic movements. The dance is both a spiritual ritual and a cultural spectacle.",
                             "articleLink": "https://www.google.com/search?q=Cham+mask+dance+Sikkim"
                         }
@@ -88,7 +88,7 @@
                             ],
                             "era": "Himalayan Culinary Tradition",
                             "category": "Cuisine",
-                            "image": "https://images.unsplash.com/photo-1601050690117-94f5f6fa5b5e?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Sikkim_sikkimcuisine.jpg",
                             "description": "Sikkimese cuisine features simple yet flavorful dishes influenced by Tibetan and Nepali traditions. Foods like momos, thukpa, and fermented dishes are staples. The cuisine reflects the region’s climate and cultural diversity.",
                             "articleLink": "https://www.google.com/search?q=Sikkimese+cuisine+momos+thukpa"
                         },
@@ -102,7 +102,7 @@
                             ],
                             "era": "Indigenous Heritage",
                             "category": "Linguistics",
-                            "image": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Sikkim_lepcha.jpg",
                             "description": "Lepcha is one of the oldest indigenous languages of Sikkim, spoken by the Lepcha community. It has its own script and rich oral traditions. The language is central to preserving the identity and heritage of the native people.",
                             "articleLink": "https://www.google.com/search?q=Lepcha+language+Sikkim"
                         }

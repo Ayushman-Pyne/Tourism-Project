@@ -18,11 +18,11 @@
                             "city": "Puducherry",
                             "coords": [
                                 11.9369,
-                                79.8350
+                                79.835
                             ],
                             "era": "Colonial Era",
                             "category": "Architecture",
-                            "image": "https://images.unsplash.com/photo-1505761671935-60b3a7427bad?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Puducherry_frenchquarter.jpg",
                             "description": "The French Quarter is known for its colorful colonial buildings, tree-lined streets, and European-style cafes. It reflects Puducherry’s history as a French settlement. The area offers a charming blend of old-world elegance and modern culture.",
                             "articleLink": "https://www.google.com/search?q=French+Quarter+Puducherry"
                         },
@@ -36,7 +36,7 @@
                             ],
                             "era": "Modern Spiritual Community",
                             "category": "Spiritual Culture",
-                            "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Puducherry_auroville.jpg",
                             "description": "Auroville is an experimental township founded on principles of peace, unity, and sustainable living. It attracts people from around the world seeking spiritual growth. The Matrimandir stands at its center as a symbol of meditation and harmony.",
                             "articleLink": "https://www.google.com/search?q=Auroville+Puducherry"
                         }
@@ -55,7 +55,7 @@
                             ],
                             "era": "Modern Cultural Space",
                             "category": "Nature",
-                            "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Puducherry_promenade.jpg",
                             "description": "Promenade Beach is a popular seaside stretch known for its scenic views and relaxed atmosphere. It is lined with landmarks, cafes, and walking paths. The beach is central to Puducherry’s vibrant coastal life.",
                             "articleLink": "https://www.google.com/search?q=Promenade+Beach+Puducherry"
                         },
@@ -64,12 +64,12 @@
                             "title": "Sri Aurobindo Ashram",
                             "city": "Puducherry",
                             "coords": [
-                                11.9340,
-                                79.8290
+                                11.934,
+                                79.829
                             ],
                             "era": "20th Century Spiritual Movement",
                             "category": "Spiritual Culture",
-                            "image": "https://images.unsplash.com/photo-1593697820988-37e6d7a3a065?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Puducherry_ashram.jpg",
                             "description": "Sri Aurobindo Ashram is a spiritual community founded by Sri Aurobindo and The Mother. It is known for meditation, philosophy, and peaceful surroundings. The ashram attracts seekers from across the world.",
                             "articleLink": "https://www.google.com/search?q=Sri+Aurobindo+Ashram+Puducherry"
                         }
@@ -88,7 +88,7 @@
                             ],
                             "era": "Colonial Fusion",
                             "category": "Cuisine",
-                            "image": "https://images.unsplash.com/photo-1601050690117-94f5f6fa5b5e?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Puducherry_fusion.jpg",
                             "description": "Puducherry’s cuisine is a unique blend of French and Tamil culinary traditions. From baguettes and pastries to spicy curries, the food reflects its colonial past. This fusion makes the city a culinary hotspot.",
                             "articleLink": "https://www.google.com/search?q=Puducherry+French+Tamil+cuisine"
                         },
@@ -102,7 +102,7 @@
                             ],
                             "era": "Modern Linguistic Blend",
                             "category": "Linguistics",
-                            "image": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Puducherry_languages.jpg",
                             "description": "Tamil is the primary language spoken in Puducherry, alongside French and English due to its colonial history. This multilingual environment reflects the region’s cultural diversity. It enhances Puducherry’s global appeal.",
                             "articleLink": "https://www.google.com/search?q=Languages+in+Puducherry"
                         }

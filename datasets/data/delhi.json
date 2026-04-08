@@ -5,7 +5,7 @@
             "introduction": "Delhi is a vibrant blend of ancient history and modern energy, where centuries-old monuments stand alongside bustling markets and political power centers. From Mughal architecture to street food culture, the city offers a dynamic journey through India’s past and present.",
             "coords": [
                 28.6139,
-                77.2090
+                77.209
             ],
             "zoom": 7,
             "sections": [
@@ -18,11 +18,11 @@
                             "city": "Delhi",
                             "coords": [
                                 28.6562,
-                                77.2410
+                                77.241
                             ],
                             "era": "17th Century",
                             "category": "Architecture",
-                            "image": "https://images.unsplash.com/photo-1599661046827-dacff0c0f3c2?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Delhi_redfort.jpg",
                             "description": "The Red Fort is a UNESCO World Heritage site built by Mughal emperor Shah Jahan. Its massive red sandstone walls symbolize India’s rich history and independence. The fort remains a central landmark in Delhi.",
                             "articleLink": "https://www.google.com/search?q=Red+Fort+Delhi"
                         },
@@ -36,7 +36,7 @@
                             ],
                             "era": "12th Century",
                             "category": "Architecture",
-                            "image": "https://images.unsplash.com/photo-1585136918230-0a1cfa2c1f57?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Delhi_qutub.jpg",
                             "description": "Qutub Minar is the tallest brick minaret in the world and a UNESCO World Heritage site. Built in the early Delhi Sultanate period, it showcases Indo-Islamic architecture. It is one of Delhi’s most iconic monuments.",
                             "articleLink": "https://www.google.com/search?q=Qutub+Minar+Delhi"
                         }
@@ -55,7 +55,7 @@
                             ],
                             "era": "Mughal Era Origins",
                             "category": "Culture",
-                            "image": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Delhi_chandnichowk.jpg",
                             "description": "Chandni Chowk is one of the oldest and busiest markets in Delhi, known for its narrow lanes and vibrant atmosphere. It offers a mix of street food, traditional shops, and historic landmarks. The area reflects the city’s living heritage.",
                             "articleLink": "https://www.google.com/search?q=Chandni+Chowk+Delhi"
                         },
@@ -69,7 +69,7 @@
                             ],
                             "era": "20th Century",
                             "category": "History",
-                            "image": "https://images.unsplash.com/photo-1572431447238-425af66a273b?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Delhi_indiagate.jpg",
                             "description": "India Gate is a war memorial dedicated to Indian soldiers who died in World War I. Surrounded by lawns, it is a popular gathering spot. The monument symbolizes national pride and remembrance.",
                             "articleLink": "https://www.google.com/search?q=India+Gate+Delhi"
                         }
@@ -84,11 +84,11 @@
                             "city": "Delhi",
                             "coords": [
                                 28.6139,
-                                77.2090
+                                77.209
                             ],
                             "era": "Evolving Urban Cuisine",
                             "category": "Cuisine",
-                            "image": "https://images.unsplash.com/photo-1601050690117-94f5f6fa5b5e?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Delhi_delhicuisine.jpg",
                             "description": "Delhi is famous for its diverse street food, including chaat, parathas, and kebabs. Influenced by Mughal and regional cuisines, it offers bold and rich flavors. Food culture is an essential part of the city’s identity.",
                             "articleLink": "https://www.google.com/search?q=Delhi+street+food+chaat"
                         },
@@ -98,11 +98,11 @@
                             "city": "Delhi",
                             "coords": [
                                 28.6139,
-                                77.2090
+                                77.209
                             ],
                             "era": "Modern Linguistic Blend",
                             "category": "Linguistics",
-                            "image": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Delhi_hindienglish.jpg",
                             "description": "Hindi is the primary language spoken in Delhi, along with widespread use of English in administration and business. The city’s diverse population also brings many regional languages. This linguistic mix reflects Delhi’s cosmopolitan nature.",
                             "articleLink": "https://www.google.com/search?q=Languages+spoken+in+Delhi"
                         }

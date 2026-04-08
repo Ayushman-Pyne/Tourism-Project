@@ -22,7 +22,7 @@
                             ],
                             "era": "Traditional Spring Festival",
                             "category": "Festivals",
-                            "image": "https://images.unsplash.com/photo-1587334274328-64186a80f7b5?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Mizoram_chapchar.jpg",
                             "description": "Chapchar Kut is one of Mizoram’s most important festivals, celebrated after the clearing of forests for cultivation. It features traditional dances, music, and community feasts. The festival reflects the agricultural roots and joyful spirit of the Mizo people.",
                             "articleLink": "https://www.google.com/search?q=Chapchar+Kut+Mizoram"
                         },
@@ -36,7 +36,7 @@
                             ],
                             "era": "Ancient Tradition",
                             "category": "Performing Arts",
-                            "image": "https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Mizoram_cheraw.jpg",
                             "description": "Cheraw, also known as the bamboo dance, is one of the most iconic dance forms of Mizoram. Dancers skillfully move between bamboo poles while maintaining rhythm and grace. It is performed during festivals and celebrations.",
                             "articleLink": "https://www.google.com/search?q=Cheraw+bamboo+dance+Mizoram"
                         }
@@ -51,11 +51,11 @@
                             "city": "Lawngtlai",
                             "coords": [
                                 22.5333,
-                                92.9000
+                                92.9
                             ],
                             "era": "Natural Heritage",
                             "category": "Nature",
-                            "image": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Mizoram_phawngpui.jpg",
                             "description": "Phawngpui, also known as the Blue Mountain, is the highest peak in Mizoram and holds cultural significance for local tribes. Surrounded by lush greenery and wildlife, it offers breathtaking views. It is both a natural and spiritual landmark.",
                             "articleLink": "https://www.google.com/search?q=Phawngpui+Blue+Mountain+Mizoram"
                         },
@@ -65,11 +65,11 @@
                             "city": "Serchhip",
                             "coords": [
                                 23.3167,
-                                92.8500
+                                92.85
                             ],
                             "era": "Traditional Lifestyle",
                             "category": "Culture",
-                            "image": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Mizoram_village.jpg",
                             "description": "Village life in Mizoram is centered around strong community bonds and shared responsibilities. Traditional houses, customs, and festivals define daily life. The concept of ‘Tlawmngaihna’ reflects selflessness and social harmony among the people.",
                             "articleLink": "https://www.google.com/search?q=Mizo+village+life+Tlawmngaihna"
                         }
@@ -88,7 +88,7 @@
                             ],
                             "era": "Traditional Culinary Heritage",
                             "category": "Cuisine",
-                            "image": "https://images.unsplash.com/photo-1601050690117-94f5f6fa5b5e?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Mizoram_mizocuisine.jpg",
                             "description": "Mizo cuisine is simple, nutritious, and based on boiled or lightly cooked food. Rice is a staple, often served with vegetables, meat, and bamboo shoots. The cuisine reflects a healthy lifestyle and reliance on natural ingredients.",
                             "articleLink": "https://www.google.com/search?q=Mizo+cuisine+food"
                         },
@@ -102,7 +102,7 @@
                             ],
                             "era": "Modern Literary Tradition",
                             "category": "Linguistics",
-                            "image": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Mizoram_mizo.jpg",
                             "description": "Mizo is the official language of Mizoram, written using the Roman script. It developed significantly during the colonial period with the introduction of formal education. Today, it is central to the state’s identity and communication.",
                             "articleLink": "https://www.google.com/search?q=Mizo+language+history"
                         }

@@ -22,7 +22,7 @@
                             ],
                             "era": "17th Century",
                             "category": "Architecture",
-                            "image": "https://images.unsplash.com/photo-1585136918230-0a1cfa2c1f57?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Uttar_Pradesh_taj.jpg",
                             "description": "The Taj Mahal is one of the world’s most iconic monuments, built by Emperor Shah Jahan in memory of his wife Mumtaz Mahal. Its white marble beauty and symmetry make it a UNESCO World Heritage site. It symbolizes eternal love and Mughal architecture.",
                             "articleLink": "https://www.google.com/search?q=Taj+Mahal+Agra"
                         },
@@ -36,7 +36,7 @@
                             ],
                             "era": "Ancient Era",
                             "category": "Religious Heritage",
-                            "image": "https://images.unsplash.com/photo-1582555172866-f73bb12a2ab3?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Uttar_Pradesh_varanasi.jpg",
                             "description": "Varanasi is one of the oldest living cities in the world, known for its sacred ghats along the Ganges River. Pilgrims gather here for rituals, prayers, and cremation ceremonies. The city represents spiritual continuity and devotion.",
                             "articleLink": "https://www.google.com/search?q=Varanasi+ghats+Ganges"
                         }
@@ -55,7 +55,7 @@
                             ],
                             "era": "Ancient Tradition",
                             "category": "Festivals",
-                            "image": "https://images.unsplash.com/photo-1587334274328-64186a80f7b5?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Uttar_Pradesh_kumbh.jpg",
                             "description": "Kumbh Mela is the largest religious gathering in the world, held periodically in Prayagraj. Millions of devotees come to take a holy dip at the confluence of rivers. The event reflects deep spiritual faith and cultural unity.",
                             "articleLink": "https://www.google.com/search?q=Kumbh+Mela+Prayagraj"
                         },
@@ -69,7 +69,7 @@
                             ],
                             "era": "Medieval Era",
                             "category": "Performing Arts",
-                            "image": "https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Uttar_Pradesh_kathak.jpg",
                             "description": "Kathak is a classical dance form that flourished in the courts of North India, especially in Lucknow. Known for its intricate footwork and expressive storytelling, it blends Hindu and Mughal influences. It remains a major cultural art form.",
                             "articleLink": "https://www.google.com/search?q=Kathak+dance+Lucknow"
                         }
@@ -88,7 +88,7 @@
                             ],
                             "era": "Mughal Culinary Tradition",
                             "category": "Cuisine",
-                            "image": "https://images.unsplash.com/photo-1601050690117-94f5f6fa5b5e?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Uttar_Pradesh_upcuisine.jpg",
                             "description": "Awadhi cuisine is known for its rich flavors and slow-cooked dishes like biryani and kebabs. Originating from the royal kitchens of Lucknow, it emphasizes aroma and texture. The cuisine reflects the elegance of Mughal culinary traditions.",
                             "articleLink": "https://www.google.com/search?q=Awadhi+cuisine+Lucknow"
                         },
@@ -102,7 +102,7 @@
                             ],
                             "era": "Modern Literary Tradition",
                             "category": "Linguistics",
-                            "image": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Uttar_Pradesh_hindi.jpg",
                             "description": "Hindi is the primary language of Uttar Pradesh and one of the most widely spoken languages in India. It has a rich literary tradition and plays a central role in administration and culture. The language connects diverse communities across the state.",
                             "articleLink": "https://www.google.com/search?q=Hindi+language+history"
                         }

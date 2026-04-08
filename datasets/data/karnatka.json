@@ -17,12 +17,12 @@
                             "title": "Hampi Ruins",
                             "city": "Hampi",
                             "coords": [
-                                15.3350,
-                                76.4600
+                                15.335,
+                                76.46
                             ],
                             "era": "14th–16th Century",
                             "category": "History",
-                            "image": "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Karnataka_hampi.jpg",
                             "description": "Hampi, a UNESCO World Heritage site, was once the capital of the Vijayanagara Empire. Its vast ruins include temples, markets, and royal complexes set amid boulder-strewn landscapes. The site reflects the grandeur of a powerful medieval kingdom.",
                             "articleLink": "https://www.google.com/search?q=Hampi+Vijayanagara+Empire"
                         },
@@ -36,7 +36,7 @@
                             ],
                             "era": "19th Century",
                             "category": "Architecture",
-                            "image": "https://images.unsplash.com/photo-1599661046827-dacff0c0f3c2?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Karnataka_mysorepalace.jpg",
                             "description": "Mysore Palace is one of India’s most magnificent royal residences, known for its Indo-Saracenic architecture. Illuminated during festivals, it becomes a visual spectacle. The palace symbolizes the royal heritage of the Wadiyar dynasty.",
                             "articleLink": "https://www.google.com/search?q=Mysore+Palace+history"
                         }
@@ -55,7 +55,7 @@
                             ],
                             "era": "Medieval Tradition",
                             "category": "Performing Arts",
-                            "image": "https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Karnataka_yakshagana.jpg",
                             "description": "Yakshagana is a traditional theatre form combining dance, music, and dialogue to narrate mythological stories. Known for its elaborate costumes and expressive performances, it is a cultural hallmark of coastal Karnataka. Performances often last through the night.",
                             "articleLink": "https://www.google.com/search?q=Yakshagana+Karnataka"
                         },
@@ -69,7 +69,7 @@
                             ],
                             "era": "Classical Tradition",
                             "category": "Music",
-                            "image": "https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Karnataka_carnatic.jpg",
                             "description": "Carnatic music, one of India’s classical music systems, thrives in Karnataka with deep roots in devotional traditions. Known for its complex compositions and improvisation, it is performed in concerts and festivals. The tradition continues to evolve while preserving its heritage.",
                             "articleLink": "https://www.google.com/search?q=Carnatic+music+Karnataka"
                         }
@@ -84,11 +84,11 @@
                             "city": "Hubballi",
                             "coords": [
                                 15.3647,
-                                75.1240
+                                75.124
                             ],
                             "era": "Regional Culinary Tradition",
                             "category": "Cuisine",
-                            "image": "https://images.unsplash.com/photo-1601050690117-94f5f6fa5b5e?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Karnataka_karnatakacuisine.jpg",
                             "description": "Karnataka cuisine varies widely across regions, from spicy coastal dishes to milder inland flavors. Staples include rice, ragi, and a variety of chutneys and curries. Signature dishes like bisi bele bath highlight its culinary diversity.",
                             "articleLink": "https://www.google.com/search?q=Karnataka+cuisine+bisi+bele+bath"
                         },
@@ -102,7 +102,7 @@
                             ],
                             "era": "Ancient Literary Tradition",
                             "category": "Linguistics",
-                            "image": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Karnataka_kannada.jpg",
                             "description": "Kannada is one of India’s oldest languages with a rich literary history spanning over a thousand years. It is the official language of Karnataka and a key part of regional identity. Its literature includes classical poetry and modern works.",
                             "articleLink": "https://www.google.com/search?q=Kannada+language+history"
                         }

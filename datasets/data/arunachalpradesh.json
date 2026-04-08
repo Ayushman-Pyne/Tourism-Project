@@ -4,7 +4,7 @@
             "heading": "The Untamed Heritage of Arunachal Pradesh",
             "introduction": "Arunachal Pradesh, the ‘Land of the Rising Sun’, is a realm of pristine landscapes, diverse tribes, and deeply rooted traditions. From ancient monasteries to vibrant festivals and unique indigenous lifestyles, the state offers an untouched and immersive cultural experience in India’s far northeast.",
             "coords": [
-                28.2180,
+                28.218,
                 94.7278
             ],
             "zoom": 7,
@@ -18,11 +18,11 @@
                             "city": "Tawang",
                             "coords": [
                                 27.5866,
-                                91.8650
+                                91.865
                             ],
                             "era": "17th Century",
                             "category": "Religious Heritage",
-                            "image": "https://images.unsplash.com/photo-1589883661923-6476cb0ae9f2?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Arunachal_Pradesh_tawang.jpg",
                             "description": "Tawang Monastery is the largest monastery in India and a major center of Mahayana Buddhism. Perched in the Himalayas, it offers stunning views and spiritual serenity. It plays a vital role in preserving Buddhist culture in the region.",
                             "articleLink": "https://www.google.com/search?q=Tawang+Monastery+Arunachal+Pradesh"
                         },
@@ -36,7 +36,7 @@
                             ],
                             "era": "Ancient Pilgrimage",
                             "category": "Religious Heritage",
-                            "image": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Arunachal_Pradesh_parshuram.jpg",
                             "description": "Parshuram Kund is a sacred pilgrimage site associated with the sage Parshuram. Located amidst scenic hills and rivers, it attracts devotees during Makar Sankranti. The site blends spirituality with natural beauty.",
                             "articleLink": "https://www.google.com/search?q=Parshuram+Kund+Arunachal+Pradesh"
                         }
@@ -55,7 +55,7 @@
                             ],
                             "era": "Contemporary Festival",
                             "category": "Festivals",
-                            "image": "https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Arunachal_Pradesh_ziro.jpg",
                             "description": "The Ziro Festival of Music is a unique outdoor music event set in the scenic Ziro Valley. It blends modern music with tribal culture and eco-friendly practices. The festival attracts artists and visitors from across the world.",
                             "articleLink": "https://www.google.com/search?q=Ziro+Festival+of+Music"
                         },
@@ -69,7 +69,7 @@
                             ],
                             "era": "Ancient Indigenous Tradition",
                             "category": "Tribal Culture",
-                            "image": "https://images.unsplash.com/photo-1549880338-65ddcdfd017b?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Arunachal_Pradesh_apatani.jpg",
                             "description": "The Apatani tribe of Arunachal Pradesh is known for its sustainable farming practices and unique cultural identity. Their traditions, festivals, and social systems reflect harmony with nature. The tribe represents one of the most distinctive indigenous cultures in India.",
                             "articleLink": "https://www.google.com/search?q=Apatani+tribe+Arunachal+Pradesh"
                         }
@@ -88,7 +88,7 @@
                             ],
                             "era": "Traditional Tribal Cuisine",
                             "category": "Cuisine",
-                            "image": "https://images.unsplash.com/photo-1601050690117-94f5f6fa5b5e?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Arunachal_Pradesh_arunachalcuisine.jpg",
                             "description": "Arunachali cuisine is simple and based on locally sourced ingredients like rice, meat, and bamboo shoots. Cooking methods are minimal to preserve natural flavors. The cuisine reflects the lifestyle of tribal communities.",
                             "articleLink": "https://www.google.com/search?q=Arunachal+Pradesh+cuisine"
                         },
@@ -102,7 +102,7 @@
                             ],
                             "era": "Indigenous Linguistic Diversity",
                             "category": "Linguistics",
-                            "image": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=400&q=80",
+                            "image": "images/Arunachal_Pradesh_triballanguages.jpg",
                             "description": "Arunachal Pradesh is home to numerous tribal languages belonging to the Tibeto-Burman family. Each tribe has its own dialect and cultural identity. These languages preserve the rich diversity of the region.",
                             "articleLink": "https://www.google.com/search?q=Arunachal+Pradesh+tribal+languages"
                         }

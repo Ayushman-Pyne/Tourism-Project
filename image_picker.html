@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Picker — India Cultural Map</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --gold: #d4af37;
+            --gold-dim: rgba(212, 175, 55, 0.15);
+            --bg: #0a0c0f;
+            --surface: rgba(255,255,255,0.04);
+            --border: rgba(212, 175, 55, 0.2);
+            --text: #e0ddd5;
+            --muted: #6b7280;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* ── TOP BAR ── */
+        .topbar {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 14px 28px;
+            background: rgba(0,0,0,0.6);
+            border-bottom: 1px solid var(--border);
+            backdrop-filter: blur(12px);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .topbar h1 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--gold);
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            white-space: nowrap;
+        }
+        .api-key-wrap {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex: 1;
+            max-width: 420px;
+        }
+        .api-key-wrap input {
+            flex: 1;
+            padding: 8px 14px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            color: var(--text);
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.85rem;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+        .api-key-wrap input:focus { border-color: var(--gold); }
+        .api-key-wrap a {
+            color: var(--gold);
+            font-size: 0.78rem;
+            text-decoration: none;
+            white-space: nowrap;
+            opacity: 0.8;
+        }
+        .api-key-wrap a:hover { opacity: 1; }
+        .progress-pill {
+            background: var(--gold-dim);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 5px 14px;
+            font-size: 0.82rem;
+            color: var(--gold);
+            white-space: nowrap;
+        }
+        .mapped-pill {
+            background: rgba(34,197,94,0.12);
+            border: 1px solid rgba(34,197,94,0.35);
+            border-radius: 20px;
+            padding: 5px 14px;
+            font-size: 0.82rem;
+            color: #4ade80;
+            white-space: nowrap;
+        }
+        .btn-export {
+            margin-left: auto;
+            padding: 8px 18px;
+            background: var(--gold);
+            color: #000;
+            border: none;
+            border-radius: 8px;
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.85rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: opacity 0.2s;
+            white-space: nowrap;
+        }
+        .btn-export:hover { opacity: 0.85; }
+
+        /* ── MAIN LAYOUT ── */
+        .main {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 0;
+            min-height: calc(100vh - 57px);
+        }
+
+        /* ── LEFT PANEL ── */
+        .panel-left {
+            background: rgba(0,0,0,0.4);
+            border-right: 1px solid var(--border);
+            padding: 28px 22px;
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+        }
+        .current-item-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 20px;
+        }
+        .current-item-card .label {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--muted);
+            margin-bottom: 6px;
+        }
+        .current-item-card h2 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--gold);
+            line-height: 1.3;
+            margin-bottom: 14px;
+        }
+        .meta-row {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.82rem;
+            color: var(--muted);
+            margin-bottom: 6px;
+        }
+        .meta-row i { color: var(--gold); opacity: 0.7; width: 14px; }
+
+        .search-keyword {
+            margin-top: 14px;
+            padding-top: 14px;
+            border-top: 1px solid var(--border);
+        }
+        .search-keyword .label { margin-bottom: 8px; }
+        .keyword-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: var(--gold-dim);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 5px 12px;
+            font-size: 0.83rem;
+            color: var(--gold);
+        }
+        #customKeyword {
+            width: 100%;
+            padding: 8px 14px;
+            background: rgba(255,255,255,0.04);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            color: var(--text);
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.85rem;
+            outline: none;
+            margin-top: 10px;
+            transition: border-color 0.2s;
+        }
+        #customKeyword:focus { border-color: var(--gold); }
+        .btn-search {
+            width: 100%;
+            margin-top: 10px;
+            padding: 9px;
+            background: var(--gold);
+            color: #000;
+            border: none;
+            border-radius: 8px;
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.88rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: opacity 0.2s;
+        }
+        .btn-search:hover { opacity: 0.88; }
+
+        .current-url-box {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 16px;
+        }
+        .current-url-box .label { margin-bottom: 8px; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1.5px; color: var(--muted); }
+        .current-url-box .url-text {
+            font-size: 0.72rem;
+            color: var(--muted);
+            word-break: break-all;
+            line-height: 1.5;
+        }
+        .current-url-box .url-text a { color: var(--gold); text-decoration: none; }
+
+        .nav-buttons {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-top: auto;
+        }
+        .btn-nav {
+            padding: 10px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            color: var(--text);
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 7px;
+        }
+        .btn-nav:hover { background: var(--gold-dim); border-color: var(--gold); color: var(--gold); }
+        .btn-skip {
+            grid-column: 1 / -1;
+            background: transparent;
+            border-color: rgba(212, 175, 55, 0.1);
+            color: var(--muted);
+            font-size: 0.8rem;
+        }
+        .btn-skip:hover { background: rgba(255,255,255,0.03); border-color: var(--border); color: var(--text); }
+
+        /* ── RIGHT PANEL ── */
+        .panel-right {
+            padding: 28px;
+            display: flex;
+            flex-direction: column;
+            gap: 22px;
+        }
+
+        .shortcut-hint {
+            text-align: center;
+            font-size: 0.8rem;
+            color: var(--muted);
+            padding: 8px;
+        }
+        .shortcut-hint span {
+            display: inline-block;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 2px 8px;
+            margin: 0 2px;
+            font-size: 0.78rem;
+            color: var(--gold);
+        }
+
+        .images-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 14px;
+        }
+
+        .img-card {
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 2px solid transparent;
+            cursor: pointer;
+            aspect-ratio: 3/4;
+            background: var(--surface);
+            transition: all 0.25s ease;
+        }
+        .img-card:hover {
+            border-color: var(--gold);
+            transform: translateY(-4px);
+            box-shadow: 0 12px 32px rgba(212,175,55,0.2);
+        }
+        .img-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: opacity 0.3s;
+        }
+        .img-card .number-badge {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: rgba(0,0,0,0.75);
+            border: 1px solid var(--gold);
+            color: var(--gold);
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.82rem;
+            font-weight: 700;
+            backdrop-filter: blur(4px);
+        }
+        .img-card .download-overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(0,0,0,0.55);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            opacity: 0;
+            transition: opacity 0.2s;
+        }
+        .img-card:hover .download-overlay { opacity: 1; }
+        .download-overlay i { font-size: 2rem; color: var(--gold); }
+        .download-overlay span { font-size: 0.8rem; color: #fff; }
+
+        .img-card .photographer {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 8px 10px 8px;
+            background: linear-gradient(transparent, rgba(0,0,0,0.8));
+            font-size: 0.7rem;
+            color: rgba(255,255,255,0.6);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        /* ── LOADING / STATES ── */
+        .loading-state {
+            grid-column: 1 / -1;
+            text-align: center;
+            padding: 80px 20px;
+            color: var(--muted);
+        }
+        .spinner {
+            width: 40px;
+            height: 40px;
+            border: 3px solid var(--border);
+            border-top-color: var(--gold);
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+            margin: 0 auto 16px;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        .no-key-state {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            gap: 14px;
+            text-align: center;
+            color: var(--muted);
+        }
+        .no-key-state i { font-size: 3rem; color: var(--gold); opacity: 0.4; }
+        .no-key-state p { max-width: 360px; font-size: 0.9rem; line-height: 1.6; }
+        .no-key-state a { color: var(--gold); }
+
+        /* ── TOAST NOTIFICATION ── */
+        #toast {
+            position: fixed;
+            bottom: 24px;
+            left: 50%;
+            transform: translateX(-50%) translateY(80px);
+            background: rgba(15,17,21,0.95);
+            border: 1px solid var(--gold);
+            border-radius: 12px;
+            padding: 12px 22px;
+            font-size: 0.9rem;
+            color: var(--gold);
+            z-index: 9999;
+            transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+            pointer-events: none;
+            white-space: nowrap;
+        }
+        #toast.show { transform: translateX(-50%) translateY(0); }
+
+        /* ── DONE STATE ── */
+        .done-state {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            gap: 16px;
+            text-align: center;
+        }
+        .done-state i { font-size: 4rem; color: var(--gold); }
+        .done-state h2 { font-size: 1.5rem; color: var(--gold); }
+        .done-state p { color: var(--muted); max-width: 360px; line-height: 1.6; }
+    </style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+    <h1><i class="fas fa-images" style="margin-right:8px;"></i>Image Picker</h1>
+    <div class="api-key-wrap">
+        <input type="password" id="apiKeyInput" placeholder="Paste your free Pexels API key…" />
+        <a href="https://www.pexels.com/api/" target="_blank"><i class="fas fa-key"></i> Get free key</a>
+    </div>
+    <div class="progress-pill" id="progressPill">Loading…</div>
+    <div class="mapped-pill" id="mappedPill">0 mapped</div>
+    <button class="btn-export" onclick="exportMapping()"><i class="fas fa-file-export"></i> Export Mapping</button>
+</div>
+
+<!-- MAIN -->
+<div class="main">
+    <!-- LEFT PANEL -->
+    <div class="panel-left">
+        <div class="current-item-card" id="itemCard">
+            <div class="label">Current Item</div>
+            <h2 id="itemTitle">Loading…</h2>
+            <div class="meta-row"><i class="fas fa-map-marker-alt"></i><span id="itemCity">—</span></div>
+            <div class="meta-row"><i class="fas fa-tag"></i><span id="itemCategory">—</span></div>
+            <div class="meta-row"><i class="fas fa-landmark"></i><span id="itemState">—</span></div>
+            <div class="search-keyword">
+                <div class="label">Search Keyword</div>
+                <div class="keyword-tag" id="keywordTag"><i class="fas fa-search"></i><span id="keywordText">—</span></div>
+                <input type="text" id="customKeyword" placeholder="Override keyword…" />
+                <button class="btn-search" onclick="searchWithKeyword()">
+                    <i class="fas fa-search"></i> Search
+                </button>
+            </div>
+        </div>
+
+        <div class="current-url-box">
+            <div class="label">Current Image URL</div>
+            <div class="url-text" id="currentUrlDisplay">No image assigned yet.</div>
+        </div>
+
+        <div class="nav-buttons">
+            <button class="btn-nav" onclick="navigate(-1)"><i class="fas fa-arrow-left"></i> Prev</button>
+            <button class="btn-nav" onclick="navigate(1)">Next <i class="fas fa-arrow-right"></i></button>
+            <button class="btn-nav btn-skip" onclick="navigate(1)"><i class="fas fa-forward"></i> Skip without saving</button>
+        </div>
+    </div>
+
+    <!-- RIGHT PANEL -->
+    <div class="panel-right" id="rightPanel">
+        <div class="shortcut-hint">
+            Press <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span> to instantly download the image at that position
+        </div>
+        <div class="images-grid" id="imagesGrid">
+            <div class="loading-state">
+                <div class="spinner"></div>
+                <p>Loading item data…</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="toast"></div>
+
+<script>
+// ─── DATA FILES ───────────────────────────────────────────────────────────────
+const DATA_FILES = [
+    'datasets/data/andhrapradesh.json',
+    'datasets/data/arunachalpradesh.json',
+    'datasets/data/assam.json',
+    'datasets/data/bihar.json',
+    'datasets/data/chandigarh.json',
+    'datasets/data/chattisgarh.json',
+    'datasets/data/dadraandnagarhaveli.json',
+    'datasets/data/delhi.json',
+    'datasets/data/goa.json',
+    'datasets/data/gujrat.json',
+    'datasets/data/haryana.json',
+    'datasets/data/himachalpradesh.json',
+    'datasets/data/jharkhand.json',
+    'datasets/data/karnatka.json',
+    'datasets/data/kerala.json',
+    'datasets/data/lakshadweep.json',
+    'datasets/data/madhyapradesh.json',
+    'datasets/data/maharashtra.json',
+    'datasets/data/manipur.json',
+    'datasets/data/meghalaya.json',
+    'datasets/data/mizoram.json',
+    'datasets/data/nagaland.json',
+    'datasets/data/odisha.json',
+    'datasets/data/puducherry.json',
+    'datasets/data/punjab.json',
+    'datasets/data/rajasthan.json',
+    'datasets/data/sikkim.json',
+    'datasets/data/tamilnadu.json',
+    'datasets/data/telangana.json',
+    'datasets/data/tripura.json',
+    'datasets/data/up.json',
+    'datasets/data/uttarakhand.json',
+    'datasets/data/westbengal.json',
+    'datasets/data/andamanandnicobar.json',
+    'datasets/data/jammuandkashmir.json',
+    'datasets/data/ladakh.json',
+];
+
+// ─── STATE ────────────────────────────────────────────────────────────────────
+let allItems = [];    // [{ stateName, item }]
+let currentIndex = 0;
+let pexelsPhotos = [];
+let imageMapping = {};   // { itemId: { url, title, stateName } }
+
+// ─── INIT ─────────────────────────────────────────────────────────────────────
+async function loadAllData() {
+    const results = await Promise.allSettled(
+        DATA_FILES.map(f => fetch(f).then(r => r.json()))
+    );
+
+    results.forEach((result, i) => {
+        if (result.status !== 'fulfilled') return;
+        const data = result.value;
+        const states = data.states || {};
+        Object.entries(states).forEach(([stateName, stateData]) => {
+            if (!stateData.sections) return;
+            stateData.sections.forEach(section => {
+                (section.items || []).forEach(item => {
+                    allItems.push({ stateName, item });
+                });
+            });
+        });
+    });
+
+    updateProgress();
+    renderCurrentItem();
+}
+
+// ─── NAVIGATION ───────────────────────────────────────────────────────────────
+function navigate(delta) {
+    currentIndex = Math.max(0, Math.min(allItems.length - 1, currentIndex + delta));
+    renderCurrentItem();
+}
+
+// ─── RENDER CURRENT ITEM ──────────────────────────────────────────────────────
+function renderCurrentItem() {
+    if (currentIndex >= allItems.length) {
+        showDoneState();
+        return;
+    }
+
+    const { stateName, item } = allItems[currentIndex];
+
+    document.getElementById('itemTitle').textContent = item.title;
+    document.getElementById('itemCity').textContent = item.city;
+    document.getElementById('itemCategory').textContent = item.category;
+    document.getElementById('itemState').textContent = stateName;
+
+    const keyword = item.title + ' ' + item.city + ' India';
+    document.getElementById('keywordText').textContent = item.title;
+    document.getElementById('customKeyword').value = '';
+
+    const urlBox = document.getElementById('currentUrlDisplay');
+    if (item.image) {
+        urlBox.innerHTML = `<a href="${item.image}" target="_blank">${item.image}</a>`;
+    } else {
+        urlBox.textContent = 'No image assigned yet.';
+    }
+
+    updateProgress();
+    fetchPexelsImages(keyword);
+}
+
+// ─── SEARCH OVERRIDE ─────────────────────────────────────────────────────────
+function searchWithKeyword() {
+    const kw = document.getElementById('customKeyword').value.trim();
+    if (!kw) return;
+    document.getElementById('keywordText').textContent = kw;
+    fetchPexelsImages(kw);
+}
+
+// ─── PEXELS API ───────────────────────────────────────────────────────────────
+async function fetchPexelsImages(keyword) {
+    const apiKey = document.getElementById('apiKeyInput').value.trim();
+    const grid = document.getElementById('imagesGrid');
+
+    if (!apiKey) {
+        grid.innerHTML = `
+            <div class="loading-state" style="grid-column:1/-1">
+                <div class="no-key-state">
+                    <i class="fas fa-key"></i>
+                    <p>Paste your free <a href="https://www.pexels.com/api/" target="_blank">Pexels API key</a> at the top to start searching for images.</p>
+                    <p style="font-size:0.8rem;margin-top:8px;">It's completely free — sign up takes 30 seconds.</p>
+                </div>
+            </div>`;
+        return;
+    }
+
+    grid.innerHTML = `<div class="loading-state" style="grid-column:1/-1"><div class="spinner"></div><p>Searching Pexels for <strong style="color:var(--gold)">${keyword}</strong>…</p></div>`;
+
+    try {
+        const resp = await fetch(`https://api.pexels.com/v1/search?query=${encodeURIComponent(keyword)}&per_page=5&orientation=portrait`, {
+            headers: { Authorization: apiKey }
+        });
+
+        if (!resp.ok) {
+            grid.innerHTML = `<div class="loading-state" style="grid-column:1/-1"><p style="color:#ef4444">API Error ${resp.status}: Check your API key.</p></div>`;
+            return;
+        }
+
+        const data = await resp.json();
+        pexelsPhotos = data.photos || [];
+
+        if (pexelsPhotos.length === 0) {
+            grid.innerHTML = `<div class="loading-state" style="grid-column:1/-1"><p>No results for "${keyword}". Try a different keyword.</p></div>`;
+            return;
+        }
+
+        renderImages();
+
+    } catch (err) {
+        grid.innerHTML = `<div class="loading-state" style="grid-column:1/-1"><p style="color:#ef4444">Network error: ${err.message}</p></div>`;
+    }
+}
+
+// ─── RENDER IMAGES ────────────────────────────────────────────────────────────
+function renderImages() {
+    const grid = document.getElementById('imagesGrid');
+    grid.innerHTML = '';
+
+    pexelsPhotos.forEach((photo, i) => {
+        const card = document.createElement('div');
+        card.className = 'img-card';
+        card.setAttribute('tabindex', '0');
+        card.innerHTML = `
+            <img src="${photo.src.medium}" alt="${photo.alt || ''}" loading="lazy" />
+            <div class="number-badge">${i + 1}</div>
+            <div class="download-overlay">
+                <i class="fas fa-download"></i>
+                <span>Select (${i + 1})</span>
+            </div>
+            <div class="photographer">📷 ${photo.photographer}</div>
+        `;
+        card.addEventListener('click', () => selectImage(i));
+        grid.appendChild(card);
+    });
+}
+
+// ─── SELECT & RECORD ─────────────────────────────────────────────────────────
+function selectImage(index) {
+    const photo = pexelsPhotos[index];
+    if (!photo) return;
+
+    const { item, stateName } = allItems[currentIndex];
+
+    // Store the Pexels large URL in our mapping
+    const imageUrl = `${photo.src.large}?auto=compress&cs=tinysrgb&w=800`;
+    imageMapping[item.id] = {
+        url: imageUrl,
+        title: item.title,
+        stateName: stateName
+    };
+
+    // Update left panel display
+    const urlBox = document.getElementById('currentUrlDisplay');
+    urlBox.innerHTML = `✅ <a href="${imageUrl}" target="_blank">${imageUrl}</a>`;
+
+    // Update mapped counter
+    document.getElementById('mappedPill').textContent = `${Object.keys(imageMapping).length} mapped`;
+
+    showToast(`✓ Saved: ${item.title}`);
+
+    // Auto-advance after 0.8s
+    setTimeout(() => navigate(1), 800);
+}
+
+// ─── EXPORT MAPPING ───────────────────────────────────────────────────────────
+function exportMapping() {
+    if (Object.keys(imageMapping).length === 0) {
+        showToast('⚠ No images selected yet!');
+        return;
+    }
+    const json = JSON.stringify(imageMapping, null, 2);
+    const blob = new Blob([json], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'image_mapping.json';
+    a.click();
+    URL.revokeObjectURL(url);
+    showToast(`✓ image_mapping.json downloaded — run: node apply_images.js`);
+}
+
+// ─── KEYBOARD SHORTCUTS ───────────────────────────────────────────────────────
+document.addEventListener('keydown', (e) => {
+    const n = parseInt(e.key);
+    if (n >= 1 && n <= 5 && !e.ctrlKey && !e.metaKey && !e.altKey) {
+        const focused = document.activeElement;
+        if (focused && (focused.tagName === 'INPUT')) return;
+        selectImage(n - 1);
+    }
+    if (e.key === 'ArrowRight') navigate(1);
+    if (e.key === 'ArrowLeft') navigate(-1);
+});
+
+// ─── PROGRESS ─────────────────────────────────────────────────────────────────
+function updateProgress() {
+    document.getElementById('progressPill').textContent =
+        `${currentIndex + 1} / ${allItems.length} items`;
+}
+
+// ─── TOAST ────────────────────────────────────────────────────────────────────
+let toastTimer;
+function showToast(msg) {
+    const t = document.getElementById('toast');
+    t.textContent = msg;
+    t.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => t.classList.remove('show'), 2800);
+}
+
+// ─── DONE STATE ───────────────────────────────────────────────────────────────
+function showDoneState() {
+    document.getElementById('rightPanel').innerHTML = `
+        <div class="done-state">
+            <i class="fas fa-check-circle"></i>
+            <h2>All Done!</h2>
+            <p>You've gone through all ${allItems.length} items. Check your Downloads folder for all the selected images.</p>
+        </div>`;
+}
+
+// ─── KICK OFF ─────────────────────────────────────────────────────────────────
+loadAllData();
+
+// Reload images when API key is pasted
+document.getElementById('apiKeyInput').addEventListener('change', () => {
+    if (allItems.length > 0) renderCurrentItem();
+});
+</script>
+</body>
+</html>
