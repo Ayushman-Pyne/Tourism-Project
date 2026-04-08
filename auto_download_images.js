@@ -168,7 +168,7 @@ async function main() {
             const safeName = stateName.replace(/\s+/g, '_');
             const filename = `${safeName}_${item.id}.jpg`;
             const dest     = path.join(OUTPUT_DIR, filename);
-            await downloadFile(photo.src.large, dest);
+            await downloadFile(photo.src.medium, dest);
 
             const relativePath = `images/${filename}`;
             mapping[item.id]   = relativePath;

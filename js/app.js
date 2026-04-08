@@ -226,7 +226,7 @@ function renderSidebar(stateName, stateData) {
                             ${tags}
                         </div>
                         <span class="location"><i class="fas fa-map-marker-alt"></i> ${item.city}</span>
-                        <img src="${item.image}" alt="${item.title}">
+                        <img src="${item.image}" alt="${item.title}" loading="lazy" decoding="async">
                         <p>${item.description}</p>
                         ${linkHtml}
                     </div>
@@ -388,31 +388,47 @@ const dataFiles = [
     'datasets/data/puducherry.json'
 ];
 
-Promise.all(dataFiles.map(file => {
-    return fetch(file).then(response => {
-        if (!response.ok) throw new Error("Network response was not ok for " + file);
-        return response.json();
+// ── Data Loading: use pre-bundled global if available (production),
+//    otherwise fetch individual files (local dev fallback)
+function loadStateData() {
+    if (window.INDIA_HERITAGE_DATA) {
+        // ✅ Bundled mode — zero fetch requests
+        statesData = window.INDIA_HERITAGE_DATA;
+        loadMarkers();
+        resetTimer();
+        return;
+    }
+
+    // 🔄 Dev fallback — fetch each JSON individually
+    Promise.all(dataFiles.map(file => {
+        return fetch(file).then(response => {
+            if (!response.ok) throw new Error("Network response was not ok for " + file);
+            return response.json();
+        });
+    }))
+    .then(results => {
+        statesData = {};
+        results.forEach(data => {
+            const states = data.states || data;
+            Object.assign(statesData, states);
+        });
+        loadMarkers();
+        resetTimer();
+    })
+    .catch(err => {
+        console.error("Failed to load JSON datasets. Are you running a local server?", err);
+        displayArea.innerHTML = `
+            <div class="museum-placeholder fade-in" style="margin: auto 0; text-align: center;">
+                <i class="fas fa-exclamation-triangle fa-3x" style="color: #ef4444; margin-bottom: 15px;"></i>
+                <h2 style="color: #fca5a5;">Data Unavailable</h2>
+                <p>Could not load state datasets. Since browsers block local file loading, please ensure this site is running on a local development server (like VS Code Live Server).</p>
+            </div>
+        `;
     });
-}))
-.then(results => {
-    statesData = {};
-    results.forEach(data => {
-        const states = data.states || data;
-        Object.assign(statesData, states); // Merge each state's data into the global dictionary
-    });
-    loadMarkers();
-    resetTimer();
-})
-.catch(err => {
-    console.error("Failed to load JSON datasets. Are you running a local server?", err);
-    displayArea.innerHTML = `
-        <div class="museum-placeholder fade-in" style="margin: auto 0; text-align: center;">
-            <i class="fas fa-exclamation-triangle fa-3x" style="color: #ef4444; margin-bottom: 15px;"></i>
-            <h2 style="color: #fca5a5;">Data Unavailable</h2>
-            <p>Could not load state datasets. Since browsers block local file loading, please ensure this site is running on a local development server (like VS Code Live Server).</p>
-        </div>
-    `;
-});
+}
+
+loadStateData();
+
 
 // ── Reset to India Overview ────────────────────────────────────────────────────
 function resetToIndia() {
