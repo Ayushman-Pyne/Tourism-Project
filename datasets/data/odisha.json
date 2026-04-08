@@ -2,7 +2,7 @@
     "states": {
         "Odisha": {
             "heading": "The Sacred and Artistic Heritage of Odisha",
-            "introduction": "Odisha is a land of ancient temples, classical dance, and deep spiritual traditions along India’s eastern coast. From the grand Rath Yatra to intricate stone carvings and vibrant crafts, the state offers a timeless blend of devotion, art, and history.",
+            "introduction": "Odisha is a land of ancient temples, classical dance, and deep spiritual traditions along India's eastern coast. From the grand Rath Yatra to intricate stone carvings and vibrant crafts, the state offers a timeless blend of devotion, art, and history.",
             "coords": [
                 20.9517,
                 85.0985
@@ -23,7 +23,7 @@
                             "era": "12th Century",
                             "category": "Religious Heritage",
                             "image": "images/Odisha_jagannath.jpg",
-                            "description": "The Jagannath Temple in Puri is one of the most sacred pilgrimage sites in India, dedicated to Lord Jagannath. It is famous for the annual Rath Yatra festival, where massive chariots carry the deities. The temple is central to Odisha’s spiritual identity.",
+                            "description": "The Jagannath Temple in Puri is one of the most sacred pilgrimage sites in India, dedicated to Lord Jagannath. It is famous for the annual Rath Yatra festival, where massive chariots carry the deities. The temple is central to Odisha's spiritual identity.",
                             "articleLink": "https://www.google.com/search?q=Jagannath+Temple+Puri"
                         },
                         {
@@ -56,7 +56,7 @@
                             "era": "Ancient Classical Tradition",
                             "category": "Performing Arts",
                             "image": "images/Odisha_odissi.jpg",
-                            "description": "Odissi is one of India’s oldest classical dance forms, known for its graceful movements and sculpturesque poses. Originating from temple rituals, it tells stories from mythology and devotion. The dance is a symbol of Odisha’s artistic heritage.",
+                            "description": "Odissi is one of India's oldest classical dance forms, known for its graceful movements and sculpturesque poses. Originating from temple rituals, it tells stories from mythology and devotion. The dance is a symbol of Odisha's artistic heritage.",
                             "articleLink": "https://www.google.com/search?q=Odissi+dance+Odisha"
                         },
                         {
@@ -103,7 +103,7 @@
                             "era": "Ancient Literary Tradition",
                             "category": "Linguistics",
                             "image": "images/Odisha_odia.jpg",
-                            "description": "Odia is one of India’s classical languages with a long literary history. It has a distinct script and rich tradition of poetry and prose. The language plays a central role in shaping Odisha’s cultural identity.",
+                            "description": "Odia is one of India's classical languages with a long literary history. It has a distinct script and rich tradition of poetry and prose. The language plays a central role in shaping Odisha's cultural identity.",
                             "articleLink": "https://www.google.com/search?q=Odia+language+history"
                         }
                     ]
