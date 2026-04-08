@@ -8,7 +8,7 @@ let statesData = null; // Holds the parsed heritage dataset
 
 // Map Initialization
 map = L.map('map', {
-    zoomControl: false // We will add it manually to style it
+    zoomControl: false   // Added manually below
 }).setView([21.0, 78.0], 5);
 
 // Immediately apply offset for the sidebar so it starts in the correct centered view
@@ -24,6 +24,13 @@ map = L.map('map', {
 
 // Add zoom control to top-left
 L.control.zoom({ position: 'topleft' }).addTo(map);
+
+// ── +/- buttons always zoom around India's center ─────────────────────────────
+// Scroll wheel zoom remains default (zooms around cursor position)
+const INDIA_CENTER = L.latLng(21.0, 78.0);
+map.zoomIn  = function(delta, opts) { return map.setZoomAround(INDIA_CENTER, map.getZoom() + (delta || 1), opts); };
+map.zoomOut = function(delta, opts) { return map.setZoomAround(INDIA_CENTER, map.getZoom() - (delta || 1), opts); };
+
 
 // Premium Dark Map Skin
 L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/dark_nolabels/{z}/{x}/{y}{r}.png', {

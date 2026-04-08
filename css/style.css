@@ -350,3 +350,25 @@ details[open] .exhibit-content {
     pointer-events: auto !important; /* Make text interactive */
     cursor: pointer;
 }
+
+/* ── Credit Tag ────────────────────────────────────────────────────────────── */
+#credit-tag {
+    position: fixed;
+    bottom: 16px;
+    left: 16px;
+    z-index: 999;
+    font-family: 'Cinzel', serif;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    color: rgba(212, 175, 55, 0.35);
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.4s ease, text-shadow 0.4s ease;
+    user-select: none;
+}
+#credit-tag:hover {
+    color: rgba(212, 175, 55, 0.85);
+    text-shadow: 0 0 10px rgba(212, 175, 55, 0.4);
+}
+
