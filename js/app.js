@@ -89,7 +89,7 @@ fetch('js/final_labelled_map.json')
     .then(data => initGeoJSON(data))
     .catch(err => {
         console.warn("Could not find local map data! Fallback to Web API...", err);
-        fetch('https://raw.githubusercontent.com/Subhash9325/GeoJson-Data-of-Indian-States/master/Indian_States')
+        fetch('https://raw.githubusercontent.com/Ayushman-Pyne/Tourism-Project/refs/heads/main/js/final_labelled_map')
             .then(r => r.json())
             .then(data => initGeoJSON(data))
             .catch(apiErr => console.error("Could not load backup API:", apiErr));
